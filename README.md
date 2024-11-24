@@ -16,7 +16,7 @@ I am passionate about technology and problem-solving. Here's a glimpse of my wor
 
 ## 🌐 Find Me Online
 - [GitHub](https://github.com/Prateek-S004)
-- [LinkedIn]([https://linkedin.com/in/your-linkedin-profile](https://www.linkedin.com/in/prateek-s-505a5628a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app))
+- [LinkedIn](https://www.linkedin.com/in/prateek-s-505a5628a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)
 
 ## Portfolio Topic
 
@@ -33,8 +33,8 @@ I am passionate about technology and problem-solving. Here's a glimpse of my wor
 <dd>Prakash Hegade</dd>
 <dt>University</dt>
 <dd>KLE Technological University</dd>
-<dt>City Design Business Cases</dt>
-<dd>Google</dd>
+<dt>Portfolio Topic/Domain</dt>
+<dd>City Design Business Cases</dd>
 </dl>
 
 <br> 
