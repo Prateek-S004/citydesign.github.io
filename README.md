@@ -19,7 +19,7 @@ I am passionate about technology and problem-solving. Here's a glimpse of my wor
 - [LinkedIn](https://www.linkedin.com/in/prateek-s-505a5628a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)
 
 ## Portfolio Topic
-
+![Project Screenshot](image.png)
 <dl>
 <dt>Course Name</dt>
 <dd>Algorithmic Problem Solving</dd>
