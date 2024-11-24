@@ -21,7 +21,7 @@ I am passionate about technology and problem-solving. Here's a glimpse of my wor
 ## Portfolio Topic
 
 <dl>
-<dt>Course Nam</dt>
+<dt>Course Name</dt>
 <dd>Algorithmic Problem Solving</dd>
 <dt>Course Code</dt>
 <dd>24ECSC205</dd>
