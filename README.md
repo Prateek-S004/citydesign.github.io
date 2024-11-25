@@ -6,8 +6,7 @@
 I am passionate about technology and problem-solving. Here's a glimpse of my work:
 
 ## 🛠️ Projects
-- **Project 1**: A short description of your project.
-- **Project 2**: A short description of another project.
+- **Project 1**: Business use cases of a city.
 
 ## 🚀 Skills
 - C++, Python, JavaScript
