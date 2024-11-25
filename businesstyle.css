@@ -15,6 +15,12 @@ h1 {
     letter-spacing: 1.2px;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
     text-transform: uppercase;
+    transition: transform 0.4s ease-in-out, color 0.4s ease-in-out;
+}
+
+h1:hover {
+    transform: scale(1.1);
+    color: #1b4b70;
 }
 
 div {
@@ -25,12 +31,12 @@ div {
     margin: 20px auto;
     max-width: 700px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease-in-out;
+    transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.3s ease, background-color 0.3s ease-in-out;
 }
 
 div:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    transform: rotate(1deg) scale(1.02);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
     background-color: #f0f8ff;
 }
 
@@ -39,12 +45,13 @@ h2 {
     font-size: 1.8em;
     margin-bottom: 10px;
     text-decoration: underline;
-    transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out, letter-spacing 0.3s ease;
 }
 
 h2:hover {
     color: #163962;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    letter-spacing: 1.5px;
 }
 
 p {
@@ -52,9 +59,40 @@ p {
     font-size: 1.1em;
     margin: 0;
     line-height: 1.6;
-    transition: color 0.3s ease-in-out;
+    transition: color 0.4s ease, transform 0.4s ease, letter-spacing 0.4s ease;
 }
 
 p:hover {
     color: #3c5364;
+    transform: scale(1.02);
+    letter-spacing: 0.5px;
+}
+
+a {
+    color: #2a628f;
+    text-decoration: none;
+    transition: color 0.3s ease, text-shadow 0.3s ease-in-out, border-bottom 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #1b4b70;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-bottom: 2px solid #1b4b70;
+}
+
+button {
+    background-color: #2a628f;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease, transform 0.4s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.3s ease;
+}
+
+button:hover {
+    background-color: #1b4b70;
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
