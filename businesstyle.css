@@ -1,44 +1,41 @@
 body {
-    background-color: #f4f9f9;  
-    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 20px;
     line-height: 1.8;
     color: #333;
-    transition: background-color 0.3s ease-in-out;
 }
 
 h1 {
     text-align: center;
-    color: #2b6777;  
-    margin-bottom: 30px;
+    color: #2a628f;
     font-size: 2.5em;
-    letter-spacing: 1px;
+    margin-bottom: 40px;
+    letter-spacing: 1.2px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
     text-transform: uppercase;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
-    transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
 }
 
 div {
-    background-color: #ffffff; 
-    border: 1px solid #c2dfe3; 
-    border-radius: 10px;  
+    background-color: #ffffff;
+    border: 1px solid #d0e1f9;
+    border-radius: 12px;
     padding: 20px;
-    margin: 15px auto;
-    max-width: 800px;  
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
+    margin: 20px auto;
+    max-width: 700px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease-in-out;
 }
 
 div:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);  
-    background-color: #f0faff;
-    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease-in-out;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    background-color: #f0f8ff;
 }
 
 h2 {
-    color: #1d4e89;  
+    color: #1e4678;
     font-size: 1.8em;
     margin-bottom: 10px;
     text-decoration: underline;
@@ -46,12 +43,12 @@ h2 {
 }
 
 h2:hover {
-    color: #144d7a;
+    color: #163962;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 p {
-    color: #4d606e;  
+    color: #4b647a;
     font-size: 1.1em;
     margin: 0;
     line-height: 1.6;
@@ -59,32 +56,5 @@ p {
 }
 
 p:hover {
-    color: #333f4e;
-}
-
-a {
-    color: #2b6777;
-    text-decoration: none;
-    transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
-}
-
-a:hover {
-    color: #1d4e89;
-    text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
-}
-
-button {
-    background-color: #2b6777;
-    color: #ffffff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1em;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-button:hover {
-    background-color: #1d4e89;
-    transform: translateY(-2px);
+    color: #3c5364;
 }
