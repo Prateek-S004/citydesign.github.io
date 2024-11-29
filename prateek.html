@@ -29,31 +29,57 @@
             padding: 20px;
         }
         .card {
-            background: #fff;
-            border: 1px solid #ddd;
+            perspective: 1000px;
+            width: 300px;
+            height: 200px;
+            position: relative;
+        }
+        .card-inner {
+            width: 100%;
+            height: 100%;
+            transition: transform 0.6s ease-in-out;
+            transform-style: preserve-3d;
+        }
+        .card:hover .card-inner {
+            transform: rotateY(180deg);
+        }
+        .card-front, .card-back {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            backface-visibility: hidden;
             border-radius: 10px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            width: 300px;
             padding: 20px;
-            transition: transform 0.2s, box-shadow 0.2s;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
-        .card:hover {
-            transform: scale(1.05);
-            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        .card-front {
+            background: #fff;
+            border: 1px solid #ddd;
+        }
+        .card-back {
+            background: #0056b3;
+            color: #fff;
+            transform: rotateY(180deg);
         }
         .card h2 {
             font-size: 1.5em;
             color: #0056b3;
         }
+        .card-back h2 {
+            color: #fff;
+        }
         .card p, .card ul {
             font-size: 0.95em;
             color: #333;
             line-height: 1.5;
+            text-align: center;
         }
-        .card ul {
-            list-style-type: circle;
-            margin: 10px 0;
-            padding-left: 20px;
+        .card-back p {
+            color: #fff;
         }
         footer {
             text-align: center;
@@ -72,60 +98,62 @@
     </header>
 
     <main>
-      
+        <!-- Reflection Card 1 -->
         <div class="card">
-            <h2>Problems Observed in Nature</h2>
-            <p>Algorithms reflect natural patterns:</p>
-            <ul>
-                <li><strong>Iteration:</strong> Repeating cycles, e.g., seasons.</li>
-                <li><strong>Recursion:</strong> Fractal patterns like snowflakes.</li>
-                <li><strong>Backtracking:</strong> Animal foraging paths.</li>
-            </ul>
+            <div class="card-inner">
+                <div class="card-front">
+                    <h2>Problems in Nature</h2>
+                    <p>Hover to explore patterns like iteration, recursion, and backtracking.</p>
+                </div>
+                <div class="card-back">
+                    <h2>Nature's Patterns</h2>
+                    <ul>
+                        <li>Iteration: Seasonal cycles.</li>
+                        <li>Recursion: Fractal geometry.</li>
+                        <li>Backtracking: Animal foraging.</li>
+                    </ul>
+                </div>
+            </div>
         </div>
 
+        <!-- Reflection Card 2 -->
         <div class="card">
-            <h2>Space and Time Efficiency</h2>
-            <p>Efficiency is crucial to reduce resource usage:</p>
-            <ul>
-                <li><strong>Time Complexity:</strong> Determines speed of execution.</li>
-                <li><strong>Space Complexity:</strong> Optimizes memory usage.</li>
-            </ul>
-            <p>Examples of growth orders include O(1), O(log n), O(n), and O(2^n).</p>
-        </div>
-      
-        <div class="card">
-            <h2>Design Principles</h2>
-            <p>Key takeaways include:</p>
-            <ul>
-                <li>Divide and Conquer simplifies complex problems.</li>
-                <li>Dynamic Programming solves overlapping subproblems.</li>
-                <li>Greedy algorithms find local optima efficiently.</li>
-            </ul>
+            <div class="card-inner">
+                <div class="card-front">
+                    <h2>Efficiency in Algorithms</h2>
+                    <p>Hover to learn about time and space complexity.</p>
+                </div>
+                <div class="card-back">
+                    <h2>Efficiency Matters</h2>
+                    <ul>
+                        <li>Time Complexity: Execution speed.</li>
+                        <li>Space Complexity: Memory optimization.</li>
+                        <li>Growth Orders: O(1), O(n), O(log n).</li>
+                    </ul>
+                </div>
+            </div>
         </div>
 
+        <!-- Reflection Card 3 -->
         <div class="card">
-            <h2>Tree Data Structures</h2>
-            <p>Trees offer hierarchical solutions:</p>
-            <ul>
-                <li><strong>BST:</strong> Efficient for searches.</li>
-                <li><strong>AVL:</strong> Balances for consistent performance.</li>
-                <li><strong>Heap:</strong> Ideal for priority tasks.</li>
-            </ul>
+            <div class="card-inner">
+                <div class="card-front">
+                    <h2>Tree Structures</h2>
+                    <p>Hover to see how hierarchical data is optimized.</p>
+                </div>
+                <div class="card-back">
+                    <h2>Tree Solutions</h2>
+                    <ul>
+                        <li>BST: Efficient searching.</li>
+                        <li>AVL: Balanced structure.</li>
+                        <li>Heap: Priority management.</li>
+                    </ul>
+                </div>
+            </div>
         </div>
 
-        <div class="card">
-            <h2>Graph Algorithms</h2>
-            <p>Applications of graph algorithms include:</p>
-            <ul>
-                <li><strong>Spanning Trees:</strong> Network optimizations.</li>
-                <li><strong>Shortest Paths:</strong> Routing and navigation systems.</li>
-            </ul>
-        </div>
+        <!-- Add more cards as needed -->
 
-        <div class="card">
-            <h2>Sorting and Searching</h2>
-            <p>Efficient methods like quicksort and binary search enable fast data handling and retrieval in real-world systems.</p>
-        </div>
     </main>
 
     <footer>
