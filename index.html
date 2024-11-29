@@ -1,45 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Algorithms Course - A Journey into the Digital Realm</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Algorithms Course – Introduction</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #f3f4f6, #e2e2e2);
+            color: #333;
+        }
+
+        header {
+            background-color: #007acc;
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            transition: transform 0.3s ease;
+        }
+
+        header h1:hover {
+            transform: scale(1.1);
+        }
+
+        main {
+            max-width: 850px;
+            margin: 30px auto;
+            padding: 25px;
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        main:hover {
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            color: #007acc;
+            font-size: 2rem;
+            margin-top: 20px;
+            border-bottom: 2px solid #eaeaea;
+            padding-bottom: 5px;
+            transition: color 0.3s ease;
+        }
+
+        h2:hover {
+            color: #005fa3;
+        }
+
+        a {
+            display: inline-block;
+            color: #007acc;
+            font-size: 1.1rem;
+            text-decoration: none;
+            margin-bottom: 20px;
+            padding: 10px 20px;
+            border: 2px solid #007acc;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        a::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateX(-50%) translateY(100%);
+            transition: transform 0.3s ease;
+            z-index: 0;
+        }
+
+        a:hover::after {
+            transform: translateX(-50%) translateY(0);
+        }
+
+        a:hover {
+            color: white;
+            background-color: #007acc;
+        }
+
+        ul {
+            margin: 15px 0;
+            padding-left: 20px;
+        }
+
+        li {
+            margin: 8px 0;
+        }
+
+        section {
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            padding: 15px;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+            margin: 15px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        section:hover {
+            background-color: #eaeaea;
+            transform: translateY(-5px);
+        }
+
+        footer {
+            text-align: center;
+            margin: 30px 0 10px;
+            color: #666;
+            font-size: 0.9rem;
+        }
+    </style>
 </head>
+
 <body>
     <header>
-        <h1>Algorithms: A Journey into the Digital Realm</h1>
-        <p>Explore the building blocks of computer science</p>
+        <h1>Welcome to the Algorithms Course</h1>
     </header>
-
     <main>
-        <section class="intro">
-            <h2>Welcome to the Algorithm Adventure</h2>
-            <p>Embark on a thrilling journey through the world of algorithms and data structures. This course will equip you with the tools and techniques to solve complex problems efficiently.</p>
-            <a href="intro.html" class="button">Learn More</a>
-        </section>
-
-        <section class="course-content">
-            <h2>Course Content</h2>
-            <ul>
-                <li><strong>Data Structures</strong>: Arrays, Linked Lists, Stacks, Queues, Trees, Graphs, Heaps, Hash Tables</li>
-                <li><strong>Algorithms</strong>: Sorting Algorithms, Searching Algorithms, Dynamic Programming, Greedy Algorithms, Divide and Conquer, Backtracking, Graph Algorithms</li>
-                <li><strong>Problem-Solving Techniques</strong>: Time and Space Complexity Analysis, Algorithm Design Paradigms, Problem-Solving Strategies</li>
-            </ul>
-        </section>
-
-        <section class="join-us">
-            <h2>Join Our Community</h2>
-            <p>Connect with fellow learners, share insights, and collaborate on projects.</p>
-            <a href="#" class="button">Join Our Forum</a>
-            <a href="#" class="button">Follow Us on Social Media</a>
-        </section>
+        <a href="intro.html">Click here for the team details and about project</a>
+        <section>
+            <h2>What is the Course About?</h2>
+            <p>This course is a deep dive into the fascinating world of algorithms and data structures, foundational pillars of computer science and programming. You will learn how to design, analyze, and implement efficient solutions to computational problems.</p>
     </main>
-
-    <footer>
-        &copy; 2023 Algorithms Course. All Rights Reserved.
-    </footer>
-
-    <script src="script.js"></script>
 </body>
-</html>
