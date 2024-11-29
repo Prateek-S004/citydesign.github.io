@@ -5,37 +5,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Algorithms Course – Introduction</title>
     <style>
+        /* General Styles */
         body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.8;
             margin: 0;
             padding: 0;
-            background-color: #f9f9f9;
+            background-color: #f3f4f6;
             color: #333;
         }
+
+        /* Header */
         header {
-            background-color: #4CAF50;
+            background-color: #007acc;
             color: white;
-            padding: 1rem 0;
+            padding: 1.5rem 0;
             text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
+        header h1 {
+            margin: 0;
+            font-size: 2.2rem;
+            transition: transform 0.3s ease;
+        }
+        header h1:hover {
+            transform: scale(1.05);
+        }
+
+        /* Main Content */
         main {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 850px;
+            margin: 30px auto;
+            padding: 25px;
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease;
         }
-        h1, h2 {
-            color: #4CAF50;
+        main:hover {
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
         }
+
+        /* Headings */
+        h2 {
+            color: #007acc;
+            font-size: 1.8rem;
+            margin-top: 20px;
+            border-bottom: 2px solid #eaeaea;
+            padding-bottom: 5px;
+        }
+
+        /* Links */
+        a {
+            display: inline-block;
+            color: #007acc;
+            font-size: 1rem;
+            text-decoration: none;
+            margin-bottom: 20px;
+            padding: 10px 20px;
+            border: 1px solid #007acc;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+        a:hover {
+            background-color: #007acc;
+            color: white;
+        }
+
+        /* Lists */
         ul {
-            margin: 10px 0;
+            margin: 15px 0;
             padding-left: 20px;
         }
         li {
-            margin: 5px 0;
+            margin: 8px 0;
+        }
+
+        /* General Transition Effects */
+        section {
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+        section:hover {
+            background-color: #f9f9f9;
+            transform: translateY(-5px);
+        }
+
+        /* Footer (Optional) */
+        footer {
+            text-align: center;
+            margin: 30px 0 10px;
+            color: #666;
+            font-size: 0.9rem;
         }
     </style>
 </head>
@@ -51,31 +111,4 @@
         </section>
 
         <section>
-            <h2>What Kind of Data Structures and Algorithms Have You Studied?</h2>
-            <p>The course covers a wide range of data structures and algorithms, including:</p>
-            <ul>
-                <li><strong>Linear Data Structures:</strong> Arrays, stacks, queues, and linked lists.</li>
-                <li><strong>Non-Linear Data Structures:</strong> Binary trees, binary search trees, heaps, and graphs.</li>
-                <li><strong>Advanced Data Structures:</strong> Trie, AVL trees, and disjoint-set (union-find).</li>
-                <li><strong>Searching Algorithms:</strong> Binary search and linear search.</li>
-                <li><strong>Sorting Algorithms:</strong> Quick sort, merge sort, heap sort, and bubble sort.</li>
-                <li><strong>Graph Algorithms:</strong> Dijkstra's, Kruskal's, Prim's, and depth-first/breadth-first search.</li>
-                <li><strong>Optimization Algorithms:</strong> Dynamic programming techniques like the Knapsack problem and Longest Common Subsequence.</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Connecting the Course to Real-Time Applications</h2>
-            <p>Algorithms and data structures are integral to solving real-world problems. Examples include:</p>
-            <ul>
-                <li><strong>Web Search Engines:</strong> Graph algorithms like PageRank help determine the relevance of webpages.</li>
-                <li><strong>E-commerce Platforms:</strong> Sorting and searching algorithms enhance product search and recommendation systems.</li>
-                <li><strong>Social Networks:</strong> Graph-based algorithms analyze relationships, suggest connections, or detect communities.</li>
-                <li><strong>Navigation Systems:</strong> Shortest-path algorithms, like Dijkstra’s, power GPS applications.</li>
-                <li><strong>Machine Learning:</strong> Data structures like trees and graphs underpin models like decision trees and neural networks.</li>
-                <li><strong>Cybersecurity:</strong> Hashing and encryption algorithms ensure secure data transmission.</li>
-            </ul>
-        </section>
-    </main>
-</body>
-</html>
+            <h2>What Kind of Data Structures and Algorithms Have You Studied?</h
