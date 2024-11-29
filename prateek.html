@@ -3,125 +3,161 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3D Carousel Reflections</title>
+    <title>Course Learning Reflections</title>
     <style>
         body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f9;
             margin: 0;
             padding: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #0d1117;
-            color: #c9d1d9;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            overflow: hidden;
         }
-
-        .carousel {
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #0056b3;
+            color: #fff;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .card {
             perspective: 1000px;
-            width: 80%;
-            height: 400px;
+            width: 300px;
+            height: 200px;
             position: relative;
         }
-
-        .carousel-container {
+        .card-inner {
+            width: 100%;
+            height: 100%;
+            transition: transform 0.6s ease-in-out;
+            transform-style: preserve-3d;
+        }
+        .card:hover .card-inner {
+            transform: rotateY(180deg);
+        }
+        .card-front, .card-back {
             width: 100%;
             height: 100%;
             position: absolute;
-            transform-style: preserve-3d;
-            animation: rotate 20s infinite linear;
-        }
-
-        @keyframes rotate {
-            from {
-                transform: rotateY(0);
-            }
-            to {
-                transform: rotateY(360deg);
-            }
-        }
-
-        .carousel-item {
-            position: absolute;
-            width: 250px;
-            height: 350px;
-            background: linear-gradient(145deg, #1e222a, #2d3139);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
-            border-radius: 15px;
-            text-align: center;
+            backface-visibility: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             padding: 20px;
-            color: #c9d1d9;
-            transform-origin: 0 0 400px;
-            transform-style: preserve-3d;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
-
-        .carousel-item h2 {
-            margin-bottom: 10px;
-            font-size: 1.5rem;
-            color: #58a6ff;
+        .card-front {
+            background: #fff;
+            border: 1px solid #ddd;
         }
-
-        .carousel-item p {
-            font-size: 1rem;
+        .card-back {
+            background: #0056b3;
+            color: #fff;
+            transform: rotateY(180deg);
+        }
+        .card h2 {
+            font-size: 1.5em;
+            color: #0056b3;
+        }
+        .card-back h2 {
+            color: #fff;
+        }
+        .card p, .card ul {
+            font-size: 0.95em;
+            color: #333;
             line-height: 1.5;
+            text-align: center;
         }
-
-        /* Positioning each card around a circle */
-        .carousel-item:nth-child(1) {
-            transform: rotateY(0deg) translateZ(400px);
+        .card-back p {
+            color: #fff;
         }
-        .carousel-item:nth-child(2) {
-            transform: rotateY(60deg) translateZ(400px);
-        }
-        .carousel-item:nth-child(3) {
-            transform: rotateY(120deg) translateZ(400px);
-        }
-        .carousel-item:nth-child(4) {
-            transform: rotateY(180deg) translateZ(400px);
-        }
-        .carousel-item:nth-child(5) {
-            transform: rotateY(240deg) translateZ(400px);
-        }
-        .carousel-item:nth-child(6) {
-            transform: rotateY(300deg) translateZ(400px);
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #0056b3;
+            color: #fff;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
 <body>
-    <div class="carousel">
-        <div class="carousel-container">
-            <!-- Reflection Card 1 -->
-            <div class="carousel-item">
-                <h2>Nature's Problems</h2>
-                <p>Explore iteration, recursion, and backtracking in nature.</p>
-            </div>
-            <!-- Reflection Card 2 -->
-            <div class="carousel-item">
-                <h2>Efficiency in Algorithms</h2>
-                <p>Delve into time and space complexity and their importance.</p>
-            </div>
-            <!-- Reflection Card 3 -->
-            <div class="carousel-item">
-                <h2>Design Principles</h2>
-                <p>Learn about Divide and Conquer, Greedy, and Dynamic Programming.</p>
-            </div>
-            <!-- Reflection Card 4 -->
-            <div class="carousel-item">
-                <h2>Tree Data Structures</h2>
-                <p>Understand BST, AVL, heaps, and their real-world relevance.</p>
-            </div>
-            <!-- Reflection Card 5 -->
-            <div class="carousel-item">
-                <h2>Graph Algorithms</h2>
-                <p>Explore graph applications in spanning trees and shortest paths.</p>
-            </div>
-            <!-- Reflection Card 6 -->
-            <div class="carousel-item">
-                <h2>Sorting & Searching</h2>
-                <p>Master efficient techniques like quicksort and binary search.</p>
+    <header>
+        <h1>Course Learning Reflections</h1>
+    </header>
+
+    <main>
+        <!-- Reflection Card 1 -->
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <h2>Problems in Nature</h2>
+                    <p>Hover to explore patterns like iteration, recursion, and backtracking.</p>
+                </div>
+                <div class="card-back">
+                    <h2>Nature's Patterns</h2>
+                    <ul>
+                        <li>Iteration: Seasonal cycles.</li>
+                        <li>Recursion: Fractal geometry.</li>
+                        <li>Backtracking: Animal foraging.</li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
+
+        <!-- Reflection Card 2 -->
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <h2>Efficiency in Algorithms</h2>
+                    <p>Hover to learn about time and space complexity.</p>
+                </div>
+                <div class="card-back">
+                    <h2>Efficiency Matters</h2>
+                    <ul>
+                        <li>Time Complexity: Execution speed.</li>
+                        <li>Space Complexity: Memory optimization.</li>
+                        <li>Growth Orders: O(1), O(n), O(log n).</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Reflection Card 3 -->
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <h2>Tree Structures</h2>
+                    <p>Hover to see how hierarchical data is optimized.</p>
+                </div>
+                <div class="card-back">
+                    <h2>Tree Solutions</h2>
+                    <ul>
+                        <li>BST: Efficient searching.</li>
+                        <li>AVL: Balanced structure.</li>
+                        <li>Heap: Priority management.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Add more cards as needed -->
+
+    </main>
+
+    <footer>
+        <p>Reflection Portfolio by [Your Name]</p>
+    </footer>
 </body>
 </html>
