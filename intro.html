@@ -1,74 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="introstyle.css">
+    <title>Team Introduction</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #f7f8fc, #eef1f5);
+            color: #333;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #007acc;
+            color: white;
+            padding: 1rem;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ffdd40;
+        }
+
+        header {
+            background-color: #007acc;
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #007acc;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        section h3 {
+            font-size: 1.5rem;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .team-member {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .team-member img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            border: 3px solid #007acc;
+        }
+
+        .team-member h4 {
+            font-size: 1.2rem;
+            color: #007acc;
+        }
+
+        .team-member p {
+            font-size: 0.95rem;
+            color: #555;
+            margin: 5px 0;
+        }
+
+        ul {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+
+        ul li {
+            margin-bottom: 8px;
+        }
+    </style>
 </head>
+
 <body>
-   <header>
-        <h1>Welcome to the Algorithms Course</h1>
-        <nav>
-            <a href="index.html">Homepage</a>
-            <a href="businessusecase.html">Business Use Cases</a>
-            <a href="course.html">Course Reflections</a>
-        </nav>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Businessusecase.html">Business Use Cases</a></li>
+            <li><a href="reflection.html">Course Reflections</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Meet the Team</h1>
     </header>
+    <main>
+        <section>
+            <h2>Team Introduction</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <img src="team-member1.jpg" alt="Team Member 1">
+                    <h4>John Doe</h4>
+                    <p>Role: Project Manager</p>
+                </div>
+                <div class="team-member">
+                    <img src="team-member2.jpg" alt="Team Member 2">
+                    <h4>Jane Smith</h4>
+                    <p>Role: Algorithm Specialist</p>
+                </div>
+                <div class="team-member">
+                    <img src="team-member3.jpg" alt="Team Member 3">
+                    <h4>Alex Johnson</h4>
+                    <p>Role: Business Analyst</p>
+                </div>
+            </div>
+        </section>
 
-    <section>
-        <h2>🛠️ Projects</h2>
-        <ul>
-            <li><strong>Project 1</strong>: Business use cases to develop a new city.</li>
-        </ul>
-
-        <h2>🚀 Skills</h2>
-        <ul>
-            <li>C++, Python, JavaScript</li>
-            <li>Data Structures and Algorithms</li>
-            <li>Web Development (React.js, Node.js)</li>
-        </ul>
-
-        <h2>🌐 Find Me Online</h2>
-        <ul>
-            <li><a href="https://github.com/Prateek-S004" target="_blank">GitHub</a></li>
-            <li><a href="https://www.linkedin.com/in/prateek-s-505a5628a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn</a></li>
-            <li><a href="businessusecase.html">Click here to view the Business use cases</a></li>
-            <li><a href="prateek.html">Click </a></li>
-        </ul>
-
-        <h2>Portfolio Topic</h2>
-        <dl>
-            <dt>Course Name</dt>
-            <dd>Algorithmic Problem Solving</dd>
-
-            <dt>Course Code</dt>
-            <dd>24ECSC205</dd>
-
-            <dt>Name</dt>
-            <dd>Prateek S</dd>
-
-            <dt>SRN</dt>
-            <dd>01FE23BCS133</dd>
-
-            <dt>Course Instructor</dt>
-            <dd>Prakash Hegade</dd>
-
-            <dt>University</dt>
-            <dd>KLE Technological University</dd>
-
-            <dt>Portfolio Topic/Domain</dt>
-            <dd>Business Use Cases</dd>
-
-            <dt>Team Members</dt>
-            <dd>Prateek S (506)</dd>
-            <dd>Shivaprasad M (518)</dd>
-            <dd>Veeresh H (502)</dd>
-            <dd>Mahant H (501) </dd>
-        </dl>
-
-        <blockquote>“The only way to do great work is to love what you do.” – Steve Jobs</blockquote>
-    </section>
+        <section>
+            <h2>Course Project Introduction</h2>
+            <h3>Details of Problem Space</h3>
+            <p>
+                The project aims to explore city design challenges and propose innovative solutions. 
+                Based on the findings in the white paper, business cases were identified by evaluating real-world requirements.
+            </p>
+            <h3>Problem Definition</h3>
+            <ul>
+                <li>Analyze urban development inefficiencies and propose algorithmic solutions.</li>
+                <li>Identify gaps in city planning and design.</li>
+            </ul>
+            <h3>Business Cases</h3>
+            <ul>
+                <li><b>John Doe:</b> Efficient traffic routing algorithms for smart cities.</li>
+                <li><b>Jane Smith:</b> Optimized resource allocation using machine learning.</li>
+                <li><b>Alex Johnson:</b> Predictive modeling for energy distribution networks.</li>
+            </ul>
+        </section>
+    </main>
 </body>
+
 </html>
