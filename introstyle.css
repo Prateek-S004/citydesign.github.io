@@ -39,7 +39,9 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #ffdd40;
+    background-color: white;
+    color: #007acc;
+    border: 2px solid #007acc;
 }
 
 header {
