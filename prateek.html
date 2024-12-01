@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Course Learning Reflections</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
-    <style>
+    <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@300;400&display=swap" rel="stylesheet">
+     <style>
         body {
             font-family: 'Poppins', sans-serif;
             background-color: #f9f9f9;
@@ -75,34 +75,102 @@
     </style>
 </head>
 <body>
-    <header>
-        <h1>Course Learning Reflections</h1>
-    </header>
+    <h1>Course Learning Reflections</h1>
+    
+    <h2>1. What are the kinds of problems we see in nature? (Iteration, Recursion, Backtracking)</h2>
+    <ul>
+        <li><b>Iteration:</b>In nature we can many things which represents iteration processes like the repetition of seasons, life cycles, or growth patterns.
+            Iteration involves repeating a process in a loop until a condition is met, such as traversing through a list or simulating a cycle in time.</li>
+        <li><b>Recursion:</b>Recursion solves problems like calculating factorials, or exploring decision trees (e.g., N-Queens Problem, Towers of Brahma).These problems involve self-similarity, where smaller parts resemble the whole.</li>
+        <li><b>Backtracking:</b>In decision-making processes seen in nature, such as mazes created by ant colonies or predator-prey hunting paths, backtracking is a critical method. This approach involves exploring all possibilities, backtracking when a path is invalid, and moving forward only when a solution path is identified.</li>
+    </ul>
 
-    <main>
-        <section>
-            <h2>1. What are the kinds of problems we solve with algorithms and data structures?</h2>
+    <h2>2. What is space and time efficiency? Why are they important?</h2>
+    <ul>
+        <li><b>Space Efficiency:</b> Refers to the amount of memory or storage used by an algorithm. Efficient algorithms minimize memory usage, which is crucial for systems with limited resources </li>
+        <li><b>Time Efficiency:</b> Refers to the speed or runtime of an algorithm. Faster algorithms ensure timely responses, especially in real-time applications like navigation systems or financial trading.</li>
+        <li><b>Orders of Growth:</b>
             <ul>
-                <li><b>Optimization:</b> Problems like minimizing time or resources.</li>
-                <li><b>Searching and sorting:</b> Organizing and retrieving data efficiently.</li>
-                <li><b>Graph-related problems:</b> Network flow, shortest paths, etc.</li>
-                <li><b>Dynamic programming:</b> Breaking problems into smaller sub-problems.</li>
+                <li><b>Constant (O(1):</b> Accessing an array element.</li>
+                <li><b>Logarithmic (O(log n)):</b> Binary search.</li>
+                <li><b>Linear (O(n)):</b> Iterating over a list.</li>
+                <li><b>Linearithmetic (O(nlogn)):</b> Seen in merge sort, heap sort.</li>
+                <li><b>Quadratic (O(n<sup>2</sup>)):</b> Nested loops.</li>
+                <li><b>Cubic (O(n<sup>3</sup>)):</b>Triple nested loops.</li>
+                <li><b>Exponential (O(2<sup>n</sup>)):</b> Recursive problems like the Towers of Brahma</li>
+                <li><b>Factorial (O(n!)):</b>Solving N-Quenns problem using brute force</li>
             </ul>
-        </section>
+        </li>
+    </ul>
 
-        <section>
-            <h2>2. Key Takeaways from the Course</h2>
-            <p>Algorithms and data structures are foundational to computing. They enable optimized problem-solving and decision-making in software development.</p>
-            <ul>
-                <li><b>Understanding time and space complexity:</b> Helps in evaluating algorithm performance.</li>
-                <li><b>Efficient data organization:</b> Crucial for handling large datasets.</li>
-            </ul>
-        </section>
+    <h2>3. Takeaways from Different Design Principles</h2>
+    <ul>
+        <li><b>Bubble Sort:</b> The basic algorithm which is normally used as brute force</li>
+        <li><b>Selection Sort:</b>It is also a basic sorting algorithm which is useful for small datasets</li>
+        <li><b>Insertion Sort:</b>It is an efficient sorting algorithm which works best for nearly sorted datasets but it is inefficient for large datasets.It is also in-place dataset</li>
+        <li><b>Merge Sort:</b>It is powerful and stable sorting algorithm which works on divide and conquer principle with a consistent time complexity. It is ideal for large datasets</li>
+        <li><b>Quick Sort:</b>It is an efficient and versatile sorting algorithm with average complexity making it suitable for large datasets</li>
+        <li><b>Heap Sort:</b>It is an effiicient, in-place sorting algorithm. It is less commonly used in practice quick or merge sort, it is particularly useful in scenarios where memory efficiency is crucial.</li>
+        <li><b>Boyer-Moore Algorithm Sort:</b>It is a string-search algorithm that finds occurences of a pattern in a given text.</li>
+        <li><b>Knuth-Moris-Pratt:</b>It is also a string search algorithm where it avoids the redundant comparisions by preprocessing the pattern.</li>
+        <li><b>Rabin-Karp:</b>It is an improvement over brute force string search and uses the variants of hash to make the computaion efficient.</li>
+        <li><b>Kruskal's Algorithm:</b>It is a greedy algorithm used to find the Minimum Spanning Tree (MST) of a connected, weighted, and undirected graph. 
+            A Minimum Spanning Tree is a subset of edges that connects all vertices with the minimum possible total edge weight and without forming cycles.</li>
+        <li><b>Dijkstra's Algorithm:</b>Dijkstra's Algorithm is a graph traversal algorithm used to find the shortest path from a source vertex to all other vertices in a weighted graph. It works for graphs with non-negative edge weights and is widely used in network routing and pathfinding.</li>
+        <li><b>Floyd's:</b>The Floyd's Algorithm is a dynamic programming approach used to find the shortest paths between all pairs of vertices in a weighted graph. It is applicable for both directed and undirected graphs and can handle negative edge weights, though it cannot process graphs with negative weight cycles.</li>
+        <li><b>Warshall:</b>It is similar to the floyd's but gives all the paths from each vertices to other but does not give the shortest path as Floyd's.</li>
+        <li><b>Prim's:</b>Prim's Algorithm is a greedy algorithm used to find the Minimum Spanning Tree (MST) of a connected, weighted, and undirected graph. It grows the MST one edge at a time, always selecting the smallest edge that connects a vertex in the MST to a vertex outside the MST.</li>
+    </ul>
 
-        <section>
-            <h2>3. Challenges Faced</h2>
-            <p>Some of the key challenges include grasping advanced algorithms like dynamic programming and balancing time complexity with implementation feasibility.</p>
-        </section>
-    </main>
+    <h2>4. Hierarchical Data and Tree Structures</h2>
+     <p><b>Hierarchical Data:</b> Represents data organized in parent-child relationships, such as file systems, organizational charts, and XML/JSON structures.</p>
+        <p><b>Tree Structures</b></p>
+    <ul>
+        <li><b>Binary Search Trees (BST):</b> Quick search, insert, and delete operations.</li>
+        <li><b>AVL Trees:</b> Self-balancing with O(log n) operations.</li>
+        <li><b>Red-Black Trees:</b> Relaxed balance with faster insertion and deletion.</li>
+        <li><b>2-3 Trees:</b> Useful in databases with balance guarantees.</li>
+        <li><b>Heaps:</b> Ideal for priority queues.</li>
+        <li><b>Tries:</b> Efficient for prefix matching and dictionaries.</li>
+    </ul>
+
+    <h2>5. Need for Array Query Algorithms</h2>
+    <p>Array query algorithms are essential for efficiently answering certain types of questions or performing operations on large datasets. These operations might involve searching, updating, or processing elements in an array or a sequence of data.
+        Without efficient query algorithms, such operations would be too slow, especially for large-scale data.</p>
+    <ul>
+        <li>Fenwick Tree:Efficient range sum queries and point updates.</li>
+        <li>Segment Tree: Ideal for range sum or minimum queries.</li>
+        <li>Sparse Table:  Preprocessing for efficient Range Minimum Queries</li>
+    </ul>
+
+    <h2>6. Differentiate Between Tree and Graph Traversals</h2>
+    <ul>
+        <li><b>Tree Traversals:</b> In-order, Pre-order, Post-order.Trees are hierarchical with a single root, and traversals (in-order, pre-order, post-order) visit nodes systematically. Applications include syntax parsing, expression evaluation, and decision trees.</li>
+        <li><b>Graph Traversals:</b> BFS and DFS. Graphs represent interconnected entities, and traversals (BFS, DFS) explore these connections. Applications include social network analysis, shortest path finding, and web crawling.</li>
+    </ul>
+    <p><b>Key Difference:</b>Tree traversals are linear within a hierarchy, while graph traversals consider cycles, connectivity, and weighted paths.</p>
+
+    <h2>7. Sorting and Searching Algorithms</h2>
+    <ul>
+        <li><b>Sorting Techniques:</b> Merge Sort (divide and conquer), Quick Sort (partitioning), Heap Sort.</li>
+        <li><b>Applications:</b> Database indexing, ranking systems, and data compression.</li>
+        <li><b>Searching Techniques:</b> Binary Search, BFS, DFS.</li>
+        <li><b>Applications:</b> Web crawlers, shortest path algorithms, and network routing.</li>
+    </ul>
+
+    <h2>8. Importance of Graph Algorithms</h2>
+    <ul>
+        <li><b>Spanning Trees:</b>Represent minimal connections between nodes while maintaining graph connectivity. Applications include designing efficient utility networks like electricity grids and telecommunication networks.</li>
+        <li><b>Shortest Paths:</b>Determine the minimum cost or distance between nodes. Algorithms like Dijkstra's and Bellman-Ford are used in GPS systems, routing protocols, and network optimization.</li>
+    </ul>
+
+    <h2>9. Algorithm Design Techniques</h2>
+    <ul>
+        <li><b>Divide and Conquer:</b>Simplifies large problems by solving sub-problems, used in sorting and searching algorithms. (e.g., Merge Sort)</li>
+        <li><b>Dynamic Programming:</b>Optimal for local choices, applied in Kruskal’s and Prim’s algorithms.(e.g., Knapsack Problem).</li>
+        <li><b>Greedy Algorithms:</b> Locally optimal choices (e.g., Huffman Encoding).</li>
+        <li><b>Backtracking:</b> Systematically explores solutions, used in puzzles and optimization tasks like Sudoku.(e.g., N-Queens, Sudoku).</li>
+        <li><b>Dynamic Programming:</b>For problems with overlapping sub-problems, like sequence alignment in bioinformatics.</li>
+    </ul>
 </body>
 </html>
