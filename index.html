@@ -78,6 +78,31 @@
             padding-bottom: 5px;
         }
 
+        .dropdown {
+            margin-top: 15px;
+        }
+
+        .dropdown select {
+            width: 100%;
+            padding: 10px;
+            font-size: 1rem;
+            border: 2px solid #007acc;
+            border-radius: 5px;
+            background-color: #fff;
+            color: #333;
+            cursor: pointer;
+            transition: box-shadow 0.3s ease;
+        }
+
+        .dropdown select:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .dropdown option {
+            padding: 10px;
+            color: #333;
+            background-color: #f9f9f9;
+        }
         section {
             background-color: #f9f9f9;
             padding: 15px;
@@ -130,6 +155,35 @@
             Along with these we even saw Trie and skip lists where the skip list provide easy insertion of data and the trie works on pointers.Then there was BIT/Fenwick which was based on 1-based index array
             further there was the topics about heap how it wirks and the algorithm of heap.At last there was the BFS and DFS which were the real troublemakers but also were really important for further adventure
             on the tour of algorithm world</p>
+             <div class="dropdown">
+                <label for="keywords"><strong>Keywords:</strong></label>
+                <select id="keywords" name="keywords">
+                    <option value="" disabled selected>Choose a category...</option>
+                    <optgroup label="Linear Data Structures">
+                        <option>Arrays</option>
+                        <option>Stacks</option>
+                        <option>Queues</option>
+                    </optgroup>
+                    <optgroup label="Trees">
+                        <option>Binary Search Trees (BST)</option>
+                        <option>AVL Trees</option>
+                        <option>Red-Black Trees</option>
+                        <option>2-3 Trees</option>
+                        <option>Tries</option>
+                    </optgroup>
+                    <optgroup label="Graph Structures">
+                        <option>Adjacency Matrix</option>
+                        <option>Adjacency List</option>
+                        <option>Directed Graphs</option>
+                        <option>Undirected Graphs</option>
+                    </optgroup>
+                    <optgroup label="Specialized Structures">
+                        <option>Heaps</option>
+                        <option>Fenwick Trees</option>
+                        <option>Segment Trees</option>
+                        <option>Sparse Tables</option>
+                        <option>Skip Lists</option>
+                    </optgroup>
             <strong>Sorting methods:</strong>
             <p>This was where the real fun as well as the scary part began as the sorting algorithms piled up one by one as a heap.The inventions of different algorithms starting from bubble sort to the heap sort
             was an exhaustive process(at a corner i could hear the laugh of evil).</p>
