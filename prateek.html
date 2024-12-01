@@ -143,42 +143,60 @@
         <li>Sparse Table:  Preprocessing for efficient Range Minimum Queries</li>
     </ul>
 
-  <h2>6. Differentiate Between Tree and Graph Traversals</h2>
+ <h2>6. Differentiate Between Tree and Graph Traversals</h2>
 <table style="width:100%; border: 1px solid #ccc; border-collapse: collapse; margin-top: 20px;">
     <thead>
         <tr style="background-color: #f2f2f2;">
-            <th style="padding: 10px; text-align: left; width: 50%;">Traversal Type</th>
-            <th style="padding: 10px; text-align: left;">Description</th>
+            <th style="padding: 10px; text-align: left; width: 50%;">Criteria</th>
+            <th style="padding: 10px; text-align: left;">Tree Traversals</th>
+            <th style="padding: 10px; text-align: left;">Graph Traversals</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td style="padding: 10px; border: 1px solid #ccc;"><b>Tree Traversals</b></td>
-            <td style="padding: 10px; border: 1px solid #ccc;">In-order, Pre-order, Post-order. Trees are hierarchical with a single root, and traversals (in-order, pre-order, post-order) visit nodes systematically. Applications include syntax parsing, expression evaluation, and decision trees.</td>
+            <td style="padding: 10px; border: 1px solid #ccc;"><b>Structure</b></td>
+            <td style="padding: 10px; border: 1px solid #ccc;">Tree is hierarchical with a single root node and child nodes.</td>
+            <td style="padding: 10px; border: 1px solid #ccc;">Graph is a collection of nodes connected by edges with no hierarchical structure.</td>
         </tr>
         <tr>
-            <td style="padding: 10px; border: 1px solid #ccc;"><b>Graph Traversals</b></td>
-            <td style="padding: 10px; border: 1px solid #ccc;">BFS (Breadth-First Search) and DFS (Depth-First Search). Graphs represent interconnected entities, and traversals (BFS, DFS) explore these connections. Applications include social network analysis, shortest path finding, and web crawling.</td>
+            <td style="padding: 10px; border: 1px solid #ccc;"><b>Traversal Methods</b></td>
+            <td style="padding: 10px; border: 1px solid #ccc;">In-order, Pre-order, Post-order.</td>
+            <td style="padding: 10px; border: 1px solid #ccc;">Breadth-First Search (BFS), Depth-First Search (DFS).</td>
         </tr>
         <tr>
-            <td style="padding: 10px; border: 1px solid #ccc;"><b>Traversal Method</b></td>
-            <td style="padding: 10px; border: 1px solid #ccc;">Tree traversals use a single, rooted structure where each node has a unique parent, making it easy to implement recursive algorithms. Graph traversals involve multiple paths and connections, where nodes can have more than one parent or connection.</td>
+            <td style="padding: 10px; border: 1px solid #ccc;"><b>Traversal Type</b></td>
+            <td style="padding: 10px; border: 1px solid #ccc;">Linear, systematic traversal through parent-child relationships.</td>
+            <td style="padding: 10px; border: 1px solid #ccc;">Exploration of all paths, considering interconnected nodes with cycles.</td>
         </tr>
         <tr>
-            <td style="padding: 10px; border: 1px solid #ccc;"><b>Cycle Handling</b></td>
-            <td style="padding: 10px; border: 1px solid #ccc;">Tree traversals do not encounter cycles due to the tree's acyclic nature (no back edges). Graph traversals need mechanisms like visited nodes to avoid infinite loops in cyclic graphs (e.g., DFS, BFS).</td>
+            <td style="padding: 10px; border: 1px solid #ccc;"><b>Cycle Detection</b></td>
+            <td style="padding: 10px; border: 1px solid #ccc;">No cycles (trees do not have loops).</td>
+            <td style="padding: 10px; border: 1px solid #ccc;">Can have cycles (graphs may contain loops and cycles).</td>
         </tr>
         <tr>
-            <td style="padding: 10px; border: 1px solid #ccc;"><b>Traversal Strategy</b></td>
-            <td style="padding: 10px; border: 1px solid #ccc;">In tree traversal, nodes are visited systematically in a particular order (pre, post, or in-order). In graph traversal, the order depends on the traversal method (BFS explores all neighbors at the present depth before moving deeper, DFS explores as deep as possible before backtracking).</td>
+            <td style="padding: 10px; border: 1px solid #ccc;"><b>Implementation Complexity</b></td>
+            <td style="padding: 10px; border: 1px solid #ccc;">Simpler, as each node has one parent and can be traversed recursively.</td>
+            <td style="padding: 10px; border: 1px solid #ccc;">More complex, due to multiple paths, and may require marking visited nodes to prevent infinite loops.</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; border: 1px solid #ccc;"><b>Applications</b></td>
+            <td style="padding: 10px; border: 1px solid #ccc;">Syntax parsing, decision trees, expression evaluation, and organizational charts.</td>
+            <td style="padding: 10px; border: 1px solid #ccc;">Social network analysis, shortest path finding, web crawling, and network routing.</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; border: 1px solid #ccc;"><b>Directionality</b></td>
+            <td style="padding: 10px; border: 1px solid #ccc;">Directional from root to leaves (one-way traversal).</td>
+            <td style="padding: 10px; border: 1px solid #ccc;">Bidirectional (can traverse back and forth along edges).</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; border: 1px solid #ccc;"><b>Example Algorithms</b></td>
+            <td style="padding: 10px; border: 1px solid #ccc;">In-order, Pre-order, Post-order traversal algorithms.</td>
+            <td style="padding: 10px; border: 1px solid #ccc;">BFS, DFS, and variations of these like Iterative Deepening DFS.</td>
         </tr>
         <tr>
             <td style="padding: 10px; border: 1px solid #ccc;"><b>Memory Usage</b></td>
-            <td style="padding: 10px; border: 1px solid #ccc;">Tree traversal algorithms generally require less memory since the tree structure is hierarchical and does not require storing all nodes in memory simultaneously. Graph traversal algorithms, especially BFS, require more memory to store the entire graph or maintain queues for the traversal process.</td>
-        </tr>
-        <tr>
-            <td style="padding: 10px; border: 1px solid #ccc;"><b>Use Cases</b></td>
-            <td style="padding: 10px; border: 1px solid #ccc;">Tree traversals are often used in hierarchical data structures like file systems, decision trees, and expression trees. Graph traversals are used in applications like social networks, map routing, and analyzing complex interconnected networks.</td>
+            <td style="padding: 10px; border: 1px solid #ccc;">Generally uses less memory due to simpler structure.</td>
+            <td style="padding: 10px; border: 1px solid #ccc;">Can use more memory, especially in DFS with recursion or BFS with queues for storing nodes.</td>
         </tr>
     </tbody>
 </table>
