@@ -213,18 +213,57 @@
 <p style="margin-top: 20px;"><b>Key Difference:</b> Tree traversals are linear within a hierarchy, while graph traversals consider cycles, connectivity, and weighted paths.</p>
 
     <h2>7. Sorting and Searching Algorithms</h2>
-    <ul>
-        <li><b>Sorting Techniques:</b> Merge Sort (divide and conquer), Quick Sort (partitioning), Heap Sort.</li>
-        <li><b>Applications:</b> Database indexing, ranking systems, and data compression.</li>
-        <li><b>Searching Techniques:</b> Binary Search, BFS, DFS.</li>
-        <li><b>Applications:</b> Web crawlers, shortest path algorithms, and network routing.</li>
+     <ul>
+        <li><b>Bubble Sort:</b> The basic algorithm which is normally used as brute force</li>
+        <li><b>Selection Sort:</b>It is also a basic sorting algorithm which is useful for small datasets</li>
+        <li><b>Insertion Sort:</b>It is an efficient sorting algorithm which works best for nearly sorted datasets but it is inefficient for large datasets.It is also in-place dataset</li>
+        <li><b>Merge Sort:</b>It is powerful and stable sorting algorithm which works on divide and conquer principle with a consistent time complexity. It is ideal for large datasets</li>
+        <li><b>Quick Sort:</b>It is an efficient and versatile sorting algorithm with average complexity making it suitable for large datasets</li>
+        <li><b>Heap Sort:</b>It is an effiicient, in-place sorting algorithm. It is less commonly used in practice quick or merge sort, it is particularly useful in scenarios where memory efficiency is crucial.</li>
+        <li><b>Boyer-Moore Algorithm Sort:</b>It is a string-search algorithm that finds occurences of a pattern in a given text.</li>
+        <li><b>Knuth-Moris-Pratt:</b>It is also a string search algorithm where it avoids the redundant comparisions by preprocessing the pattern.</li>
+        <li><b>Rabin-Karp:</b>It is an improvement over brute force string search and uses the variants of hash to make the computaion efficient.</li>
+        <li><b>Kruskal's Algorithm:</b>It is a greedy algorithm used to find the Minimum Spanning Tree (MST) of a connected, weighted, and undirected graph. 
+            (A Minimum Spanning Tree is a subset of edges that connects all vertices with the minimum possible total edge weight and without forming cycles.)</li>
+        <li><b>Dijkstra's Algorithm:</b>Dijkstra's Algorithm is a graph traversal algorithm used to find the shortest path from a source vertex to all other vertices in a weighted graph. It works for graphs with non-negative edge weights and is widely used in network routing and pathfinding.</li>
+        <li><b>Floyd's:</b>The Floyd's Algorithm is a dynamic programming approach used to find the shortest paths between all pairs of vertices in a weighted graph. It is applicable for both directed and undirected graphs and can handle negative edge weights, though it cannot process graphs with negative weight cycles.</li>
+        <li><b>Warshall:</b>It is similar to the floyd's but gives all the paths from each vertices to other but does not give the shortest path as Floyd's.</li>
+        <li><b>Prim's:</b>Prim's Algorithm is a greedy algorithm used to find the Minimum Spanning Tree (MST) of a connected, weighted, and undirected graph. It grows the MST one edge at a time, always selecting the smallest edge that connects a vertex in the MST to a vertex outside the MST.</li>
     </ul>
 
     <h2>8. Importance of Graph Algorithms</h2>
+
+    <h3>Spanning Trees</h3>
+    <p>A spanning tree of a graph is a subgraph that includes all the vertices of the graph and is a tree (i.e., it is connected and has no cycles).</p>
+
+    <h4>Why are spanning trees important?</h4>
+    <p>Spanning trees are important as they provide a framework for understanding and analyzing graph-problems.Spanning trees can be used to determine the minimum cost required to connect all the nodes.This can be used in designing a proper and efficient computer network,transportation systems.</p>
+
+    <h4>Algorithms for Finding Spanning Trees:</h4>
     <ul>
-        <li><b>Spanning Trees:</b>Represent minimal connections between nodes while maintaining graph connectivity. Applications include designing efficient utility networks like electricity grids and telecommunication networks.</li>
-        <li><b>Shortest Paths:</b>Determine the minimum cost or distance between nodes. Algorithms like Dijkstra's and Bellman-Ford are used in GPS systems, routing protocols, and network optimization.</li>
+        <li>Prim's Algorithm:It is a greedy algorithm that starts with a single vertex and iteratively adds the edge with the minimum weight that connects the tree to a vertex which is not ye visited in the tree.</li>
+        <li>Kruskal's Algorithm: It is also a greedy algorithm that sorts edges by weight and adds them to the tree without creating a cycle.</li>
     </ul>
+
+    <h3>Shortest Paths</h3>
+    <p>A shortest path problem involves finding the path between two vertices in a graph such that the sum of the weights of the edges in the path is minimized.</p>
+
+    <h4>Why are shortest paths important?</h4>
+    <ul>
+        <li>Network Routing:Shortest path algorithms are used in network routing protocols to find the shortest path between two nodes in a network.</li>
+        <li>Transportation Networks: They are used to find the shortest route between two locations, such as in GPS navigation systems.</li>
+        <li>Game Theory: Shortest path algorithms can be used to find optimal strategies in games.</li>
+    </ul>
+
+    <h4>Algorithms for Finding Shortest Paths:</h4>
+    <ul>
+        <li>Dijkstra's Algorithm: A greedy algorithm that finds the shortest path from a single source vertex to all other vertices in a weighted graph with non-negative edge weights.</li>
+        <li>Bellman-Ford Algorithm: An algorithm that can handle graphs with negative edge weights, but it's less efficient than Dijkstra's algorithm for graphs with non-negative weights.</li>
+        <li>Floyd-Warshall Algorithm: An algorithm that finds the shortest paths between all pairs of vertices in a graph.</li>
+    </ul>
+
+    <p>In conclusion, graph algorithms related to spanning trees and shortest paths are essential tools for solving a wide range of real-world problems. Understanding these algorithms and their applications is crucial for computer scientists and engineers.</p>
+
 
     <h2>9. Algorithm Design Techniques</h2>
     <ul>
