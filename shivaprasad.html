@@ -354,91 +354,79 @@
     </li>
 </ul>
 
-<h2>9. Discuss the different studied algorithm design techniques</h2>
+<h2>9. Discuss the Different Studied Algorithm Design Techniques</h2>
+<p>Algorithm design techniques are like tools that help us solve problems efficiently and logically. Below are the key techniques discussed:</p>
+
 <ul>
-    <li><strong>Data Structures:</strong>
+    <li><strong>Divide and Conquer</strong>
+        <p>This method breaks a problem into smaller pieces, solves each one, and then combines the results.</p>
         <ul>
-            <li><strong>Linear Data Structures:</strong>
-                <ul>
-                    <li><strong>Arrays:</strong> Fixed-size, index-based storage.</li>
-                    <li><strong>Stacks:</strong> LIFO (Last In First Out) structure.</li>
-                    <li><strong>Queues:</strong> FIFO (First In First Out) structure.</li>
-                </ul>
-            </li>
-            <li><strong>Trees:</strong>
-                <ul>
-                    <li><strong>Binary Search Trees (BST):</strong> Nodes arranged by left and right child based on value.</li>
-                    <li><strong>AVL Trees:</strong> Self-balancing BST for efficient operations.</li>
-                    <li><strong>Red-Black Trees:</strong> Balanced tree structure that guarantees O(log n) operations.</li>
-                    <li><strong>2-3 Trees:</strong> Balanced search tree with two or three child nodes.</li>
-                    <li><strong>Tries:</strong> Prefix tree used for fast string searches.</li>
-                </ul>
-            </li>
-            <li><strong>Graph Structures:</strong>
-                <ul>
-                    <li><strong>Adjacency Matrix and List Representations:</strong> Two common ways to represent graph edges.</li>
-                    <li><strong>Directed and Undirected Graphs:</strong> Directed edges point in one direction, undirected edges have no direction.</li>
-                </ul>
-            </li>
-            <li><strong>Specialized Structures:</strong>
-                <ul>
-                    <li><strong>Heaps:</strong> Binary tree-based structure for priority queues.</li>
-                    <li><strong>Fenwick Trees (Binary Indexed Trees):</strong> Efficient data structure for cumulative frequency tables.</li>
-                    <li><strong>Segment Trees:</strong> Tree used for range queries and updates.</li>
-                    <li><strong>Sparse Tables:</strong> Efficient for range queries with precomputed results.</li>
-                    <li><strong>Skip Lists:</strong> Multi-level linked lists for faster searching.</li>
-                </ul>
-            </li>
+            <li><strong>Examples:</strong> Merge Sort (divide, sort, and merge), Quick Sort (choose a pivot and sort), Binary Search (cut the search space in half).</li>
+            <li><strong>Applications:</strong> Sorting, searching, and even geometry problems like finding the closest pair of points.</li>
         </ul>
     </li>
-    <li><strong>Algorithms:</strong>
+
+    <li><strong>Decrease and Conquer</strong>
+        <p>Solve a smaller version of the problem first, then build the solution step-by-step.</p>
         <ul>
-            <li><strong>Foundation Concepts:</strong>
-                <ul>
-                    <li><strong>Recursion:</strong> A function calling itself for solving problems.</li>
-                    <li><strong>Iteration:</strong> Repeated execution of a block of code.</li>
-                    <li><strong>Backtracking:</strong> Solving problems by exploring all possibilities and abandoning solutions that don't work.</li>
-                </ul>
-            </li>
-            <li><strong>Sorting Algorithms:</strong>
-                <ul>
-                    <li><strong>Bubble Sort:</strong> Repeatedly swapping adjacent elements to sort.</li>
-                    <li><strong>Selection Sort:</strong> Repeatedly selecting the minimum element and placing it in its correct position.</li>
-                    <li><strong>Insertion Sort:</strong> Inserting elements into their correct position one by one.</li>
-                    <li><strong>Merge Sort:</strong> Dividing and merging sorted subarrays.</li>
-                    <li><strong>Quick Sort:</strong> Partitioning and recursively sorting subarrays.</li>
-                    <li><strong>Heap Sort:</strong> Using a heap data structure to sort elements.</li>
-                </ul>
-            </li>
-            <li><strong>Searching Algorithms:</strong>
-                <ul>
-                    <li><strong>Linear Search:</strong> Searching elements sequentially.</li>
-                    <li><strong>Binary Search:</strong> Efficient search in sorted arrays by halving the search space.</li>
-                </ul>
-            </li>
-            <li><strong>String Matching Algorithms:</strong>
-                <ul>
-                    <li><strong>Brute Force:</strong> Comparing substrings directly.</li>
-                    <li><strong>KMP (Knuth-Morris-Pratt):</strong> Efficient pattern matching with preprocessing.</li>
-                    <li><strong>Rabin-Karp:</strong> Hashing-based string matching.</li>
-                    <li><strong>Boyer-Moore:</strong> Optimized string search with bad-character heuristics.</li>
-                </ul>
-            </li>
-            <li><strong>Graph Algorithms:</strong>
-                <ul>
-                    <li><strong>Depth-First Search (DFS):</strong> Traversing a graph deeply before backtracking.</li>
-                    <li><strong>Breadth-First Search (BFS):</strong> Traversing a graph level by level.</li>
-                    <li><strong>Dijkstra’s Shortest Path Algorithm:</strong> Finding the shortest path in weighted graphs (no negative weights).</li>
-                    <li><strong>Bellman-Ford Algorithm:</strong> Similar to Dijkstra’s but can handle negative weights.</li>
-                    <li><strong>Floyd-Warshall Algorithm:</strong> Finds shortest paths between all pairs of vertices.</li>
-                    <li><strong>Prim’s and Kruskal’s Minimum Spanning Tree Algorithms:</strong> Finding the minimum spanning tree of a graph.</li>
-                </ul>
-            </li>
-            <li><strong>Optimization and Problem-Specific Algorithms:</strong>
-                <ul>
-                    <li><strong>Union-Find (Disjoint Set Union):</strong> Efficiently handles the union and find operations in dynamic sets.</li>
-                </ul>
-            </li>
+            <li><strong>Examples:</strong> Euclidean Algorithm (find GCD by reducing numbers), Insertion Sort (sort one element at a time).</li>
+            <li><strong>Applications:</strong> Graph problems and step-by-step solutions.</li>
+        </ul>
+    </li>
+
+    <li><strong>Transform and Conquer</strong>
+        <p>Change the problem or its setup to make solving it easier.</p>
+        <ul>
+            <li><strong>Examples:</strong> Balanced Trees (keep trees organized for faster searches), Heap Sort (use a heap for sorting), FFT (simplifies polynomial multiplication).</li>
+            <li><strong>Applications:</strong> Making tough problems easier in areas like searching or numerical computations.</li>
+        </ul>
+    </li>
+
+    <li><strong>Dynamic Programming</strong>
+        <p>Solve smaller sub-problems once, store the results, and reuse them.</p>
+        <ul>
+            <li><strong>Examples:</strong> Knapsack Problem, Floyd-Warshall.</li>
+            <li><strong>Applications:</strong> Optimizing solutions and solving repetitive problems.</li>
+        </ul>
+    </li>
+
+    <li><strong>Greedy Algorithms</strong>
+        <p>Make the best local choice at each step to reach a global solution.</p>
+        <ul>
+            <li><strong>Examples:</strong> Kruskal’s and Prim’s algorithms (build MSTs), Huffman Coding (optimize data compression).</li>
+            <li><strong>Applications:</strong> Resource management, graph problems.</li>
+        </ul>
+    </li>
+
+    <li><strong>Backtracking</strong>
+        <p>Build solutions step-by-step and backtrack if things don’t work.</p>
+        <ul>
+            <li><strong>Examples:</strong> N-Queens (place queens on a chessboard), Hamiltonian Path (find a path through all graph nodes).</li>
+            <li><strong>Applications:</strong> Solving puzzles and exploring possibilities.</li>
+        </ul>
+    </li>
+
+    <li><strong>Branch-and-Bound</strong>
+        <p>Explore solutions one by one, but skip paths that won’t work.</p>
+        <ul>
+            <li><strong>Examples:</strong> Traveling Salesman Problem (Yet to be covered).</li>
+            <li><strong>Applications:</strong> Optimizing routes, logistics, and planning.</li>
+        </ul>
+    </li>
+
+    <li><strong>Randomized Algorithms</strong>
+        <p>Add randomness to make solving easier or faster.</p>
+        <ul>
+            <li><strong>Examples:</strong> Randomized Quick Sort (random pivots for balance).</li>
+            <li><strong>Applications:</strong> Cryptography, simulations, and complex estimations.</li>
+        </ul>
+    </li>
+
+    <li><strong>Heuristic and Approximation</strong>
+        <p>When finding the perfect solution is too hard, use shortcuts or close-enough methods.</p>
+        <ul>
+            <li><strong>Examples from Case Studies:</strong> We watched a one-hour video showing how heuristics simplify scheduling or how approximations help solve the TSP.</li>
+            <li><strong>Applications:</strong> AI, practical problem-solving, and optimization.</li>
         </ul>
     </li>
 </ul>
