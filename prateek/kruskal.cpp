@@ -71,10 +71,6 @@ class kruskal
             i++;      
         }
     }
-
-
-
-
 };
 
 
