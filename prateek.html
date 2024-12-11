@@ -114,22 +114,50 @@
 
     <h2>3. Takeaways from Different Design Principles</h2>
     <ul>
-        <li><b>Bubble Sort:</b> The basic algorithm which is normally used as brute force</li>
-        <li><b>Selection Sort:</b>It is also a basic sorting algorithm which is useful for small datasets</li>
-        <li><b>Insertion Sort:</b>It is an efficient sorting algorithm which works best for nearly sorted datasets but it is inefficient for large datasets.It is also in-place dataset</li>
-        <li><b>Merge Sort:</b>It is powerful and stable sorting algorithm which works on divide and conquer principle with a consistent time complexity. It is ideal for large datasets</li>
-        <li><b>Quick Sort:</b>It is an efficient and versatile sorting algorithm with average complexity making it suitable for large datasets</li>
-        <li><b>Heap Sort:</b>It is an effiicient, in-place sorting algorithm. It is less commonly used in practice quick or merge sort, it is particularly useful in scenarios where memory efficiency is crucial.</li>
-        <li><b>Boyer-Moore Algorithm Sort:</b>It is a string-search algorithm that finds occurences of a pattern in a given text.</li>
-        <li><b>Knuth-Moris-Pratt:</b>It is also a string search algorithm where it avoids the redundant comparisions by preprocessing the pattern.</li>
-        <li><b>Rabin-Karp:</b>It is an improvement over brute force string search and uses the variants of hash to make the computaion efficient.</li>
-        <li><b>Kruskal's Algorithm:</b>It is a greedy algorithm used to find the Minimum Spanning Tree (MST) of a connected, weighted, and undirected graph. 
-            A Minimum Spanning Tree is a subset of edges that connects all vertices with the minimum possible total edge weight and without forming cycles.</li>
-        <li><b>Dijkstra's Algorithm:</b>Dijkstra's Algorithm is a graph traversal algorithm used to find the shortest path from a source vertex to all other vertices in a weighted graph. It works for graphs with non-negative edge weights and is widely used in network routing and pathfinding.</li>
-        <li><b>Floyd's:</b>The Floyd's Algorithm is a dynamic programming approach used to find the shortest paths between all pairs of vertices in a weighted graph. It is applicable for both directed and undirected graphs and can handle negative edge weights, though it cannot process graphs with negative weight cycles.</li>
-        <li><b>Warshall:</b>It is similar to the floyd's but gives all the paths from each vertices to other but does not give the shortest path as Floyd's.</li>
-        <li><b>Prim's:</b>Prim's Algorithm is a greedy algorithm used to find the Minimum Spanning Tree (MST) of a connected, weighted, and undirected graph. It grows the MST one edge at a time, always selecting the smallest edge that connects a vertex in the MST to a vertex outside the MST.</li>
-    </ul>
+         <div class="section">
+        <h3>1. Divide and Conquer</h2>
+        <ul>
+            <li>Break the problem into smaller, independent subproblems.</li>
+            <li>Combine the solutions of subproblems to solve the original problem.</li>
+            <li><span class="highlight">Examples:</span> Merge Sort, Quick Sort, Binary Search.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h3>2. Greedy Algorithms</h2>
+        <ul>
+            <li>Make the best possible choice at each step.</li>
+            <li>Works well for problems with <span class="highlight">greedy-choice property</span> and <span class="highlight">optimal substructure</span>.</li>
+            <li><span class="highlight">Examples:</span> Dijkstra’s Algorithm, Kruskal’s Algorithm.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h3>3. Dynamic Programming (DP)</h2>
+        <ul>
+            <li>Solve overlapping subproblems and store results to avoid redundant work.</li>
+            <li>Efficiently reduces exponential problems to polynomial time.</li>
+            <li><span class="highlight">Examples:</span> Knapsack Problem, Longest Common Subsequence.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h3>4. Backtracking</h2>
+        <ul>
+            <li>Explore all possibilities, and backtrack if a solution doesn’t work.</li>
+            <li>Often used for constraint satisfaction problems.</li>
+            <li><span class="highlight">Examples:</span> N-Queens Problem, Sudoku Solver.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h3>5. Transform and Conquer</h2>
+        <ul>
+            <li>Simplify the problem or its representation to solve it more easily.</li>
+            <li>Highlights the importance of preprocessing.</li>
+            <li><span class="highlight">Examples:</span> Sorting for Binary Search, Presorting in Scheduling Problems.</li>
+        </ul>
+    </div>
 
     <h2>4. Hierarchical Data and Tree Structures</h2>
      <p><b>Hierarchical Data:</b> Represents data organized in parent-child relationships, such as file systems, organizational charts, and XML/JSON structures.</p>
@@ -250,6 +278,8 @@
 
     <h4>Why are shortest paths important?</h4>
     <ul>
+        <p>Shortest paths are crucial in DAA as they illustrate the design, analysis, and application of algorithms to solve graph problems efficiently. 
+            They prepare students to tackle more complex graph-related problems and highlight the importance of choosing the right algorithm based on the problem’s constraints.</p>
         <li>Network Routing:Shortest path algorithms are used in network routing protocols to find the shortest path between two nodes in a network.</li>
         <li>Transportation Networks: They are used to find the shortest route between two locations, such as in GPS navigation systems.</li>
         <li>Game Theory: Shortest path algorithms can be used to find optimal strategies in games.</li>
@@ -267,11 +297,12 @@
 
     <h2>9. Algorithm Design Techniques</h2>
     <ul>
-        <li><b>Divide and Conquer:</b>Simplifies large problems by solving sub-problems, used in sorting and searching algorithms. (e.g., Merge Sort)</li>
-        <li><b>Dynamic Programming:</b>Optimal for local choices, applied in Kruskal’s and Prim’s algorithms.(e.g., Knapsack Problem).</li>
-        <li><b>Greedy Algorithms:</b> Locally optimal choices (e.g., Huffman Encoding).</li>
+        <li><b>Brute Force:</b>It is a direct approach to solve a problem based on the problem statement and definitions. (e.g., Bubble Sort)</li>
+        <li><b>Divide and Conquer:</b>It is based on recursively breaking down a problem into two or more sub-problems until they get simplified enough. (e.g., Merge Sort)</li>
+        <li><b>Dynamic Programming:</b>It is a method for solving complex problem by reducing it into simpler sub-problems.(e.g., Warshall's Algorithm).</li>
+        <li><b>Greedy Algorithms:</b>It is a method in which we break the problem into simpler steps and choose the best option at each step until the problem gets solved. (e.g., Prim's Algorithm).</li>
         <li><b>Backtracking:</b> Systematically explores solutions, used in puzzles and optimization tasks like Sudoku.(e.g., N-Queens, Sudoku).</li>
-        <li><b>Dynamic Programming:</b>For problems with overlapping sub-problems, like sequence alignment in bioinformatics.</li>
+        <li><b>Transform and Conquer:</b>It is a method for solving problems by changing them into a simpler or more manageable form first. Once the problem is transformed, solving it becomes easier and faster. (e.g., AVL Tree).</li>
     </ul>
     </div>
 </body>
