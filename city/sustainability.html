@@ -3,14 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sustainable City Plan</title>
-   <nav>
-     
-            <a href="city.html">Home</a>
-            <a href="revenue">Revenue</a>
-            <a href="budget.html">Budget Distribution</a>
-            <a href="zone.html">Zone Distribution</a>
-        </nav>
     <style>
         body {
             font-family: 'Poppins', sans-serif;
@@ -20,12 +12,35 @@
             color: #2e3440;
             line-height: 1.8;
         }
+         header {
+            background-color: #007acc;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+        nav {
+            background-color: #388e3c;
+            padding: 10px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
 
         nav a {
             color: white;
             text-decoration: none;
             font-size: 1rem;
             padding: 8px 16px;
+            margin: 0 10px;
             border: 2px solid transparent;
             border-radius: 5px;
             transition: all 0.3s ease;
@@ -37,7 +52,6 @@
             border: 2px solid #388e3c;
         }
 
-      
         .container {
             max-width: 900px;
             margin: 30px auto;
@@ -67,8 +81,17 @@
     </style>
 </head>
 <body>
+    <header>
+        <h1>Sustainabilty</h1>
+        <nav>
+        <a href="city.html">Home</a>
+        <a href="revenue">Revenue</a>
+        <a href="budget.html">Budget Distribution</a>
+        <a href="zone.html">Zone Distribution</a>
+    </nav>
+    </header>
+
     <div class="container">
-        <h1>Sustainable City Plan</h1>
         <h2>Renewable Energy</h2>
         <p>The city will harness solar and wind energy to produce clean power, reducing reliance on fossil fuels.</p>
 
