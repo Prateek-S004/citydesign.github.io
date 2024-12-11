@@ -33,18 +33,6 @@ nav a:hover {
 }
 
 
-nav ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-}
-
-nav li {
-    margin: 0 15px;
-}
-
 header {
     background: #007acc;
     color: white;
