@@ -225,16 +225,23 @@
     <div class="content">
         <h2>Example Scenarios</h2>
         <div class="section-title">Waste Disposal:</div>
+        <p>Consider a scenario where waste bins are placed at different locations in the city, and the goal is to minimize the travel distance for waste collection trucks.</p>
         <ul>
-            <li>Nodes: Waste bins A, B, C, D.</li>
-            <li>Edges: A-B (4 km), A-C (2 km), etc.</li>
-            <li>Result: Shortest routes for garbage collection, reducing fuel costs and travel time.</li>
+            <li><strong>Nodes:</strong> Waste bins A, B, C, D, E</li>
+            <li><strong>Edges:</strong> A-B (4 km), A-C (2 km), A-D (6 km), B-E (3 km), C-D (1 km), D-E (5 km)</li>
+            <li><strong>Step 1:</strong> All edges are stored in a Binary Search Tree (BST) based on the distance (weight of the edge).</li>
+            <li><strong>Step 2:</strong> Using Kruskal's algorithm, we retrieve the minimum weight edges (A-C, C-D, B-E) from the BST to form the Minimum Spanning Tree (MST).</li>
+            <li><strong>Result:</strong> The optimal routes for waste collection are A-C (2 km), C-D (1 km), and B-E (3 km), minimizing the total travel distance and fuel consumption.</li>
         </ul>
+
         <div class="section-title">Drainage Management:</div>
+        <p>Now, let's consider a city drainage system with several drainage points that need to be connected efficiently to ensure smooth water flow.</p>
         <ul>
-            <li>Nodes: Drainage points A, B, C, D.</li>
-            <li>Edges: A-B (10 cost), A-C (15 cost), etc.</li>
-            <li>Result: Optimized connections, preventing bottlenecks and reducing maintenance.</li>
+            <li><strong>Nodes:</strong> Drainage points A, B, C, D, E</li>
+            <li><strong>Edges:</strong> A-B (10 cost), A-C (15 cost), B-C (5 cost), C-D (10 cost), D-E (8 cost)</li>
+            <li><strong>Step 1:</strong> The edges are again stored in a Binary Search Tree, sorted based on the cost of connecting drainage points.</li>
+            <li><strong>Step 2:</strong> Kruskal's algorithm processes these edges in order of weight and selects the minimum cost edges that connect the points without creating any cycles (A-B, B-C, D-E).</li>
+            <li><strong>Result:</strong> The optimal drainage connections are A-B (10 cost), B-C (5 cost), and D-E (8 cost), which efficiently connect the drainage points with minimal cost.</li>
         </ul>
     </div>
 
