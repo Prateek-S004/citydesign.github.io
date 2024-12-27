@@ -1,1 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Optimized Waste Disposal and Drainage Management for Vyomadri</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            color: #34495e;
+            line-height: 1.6;
+        }
 
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+
+        h2 {
+            margin-top: 30px;
+            font-size: 28px;
+        }
+
+        p {
+            font-size: 16px;
+            margin-bottom: 16px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        ul li {
+            font-size: 16px;
+            padding-left: 20px;
+        }
+
+        nav {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            background-color: #34495e;
+            padding: 15px;
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 30px;
+            font-size: 18px;
+            padding: 10px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #2980b9;
+            transform: scale(1.05);
+        }
+
+        nav a:active {
+            background-color: #1abc9c;
+        }
+
+        @media (max-width: 768px) {
+            nav a {
+                font-size: 16px;
+                margin-right: 15px;
+            }
+        }
+
+        section {
+            padding: 80px 20px 20px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .content {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 40px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .content:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        .section-title {
+            background-color: #ecf0f1;
+            padding: 10px 15px;
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+        }
+
+        @media (max-width: 1024px) {
+            .content {
+                padding: 15px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            h2 {
+                font-size: 24px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                position: relative;
+                padding: 10px;
+            }
+
+            nav a {
+                display: block;
+                margin-right: 0;
+                padding: 12px 10px;
+            }
+
+            .content {
+                padding: 15px;
+            }
+
+            h1 {
+                font-size: 22px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 18px;
+            }
+
+            h2 {
+                font-size: 18px;
+            }
+
+            p, ul li {
+                font-size: 14px;
+            }
+
+            nav a {
+                font-size: 14px;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="prateekusecase.html">Intro</a>
+        <a href="usecase1.html">Efficient Traffic Management System</a>
+        <a href="usecase2.html">Zone for Recreation and Tourism</a>
+    </nav>
+   <header>
+        <h1>Optimized Waste Disposal and Drainage Management</h1>
+    </header>
+
+    <div class="content">
+        <h2>Why Addressing This Issue is Necessary</h2>
+        <p>
+            Effective waste disposal and drainage management are crucial for a smart city like Vyomadri. Without addressing these issues:
+        </p>
+        <ul>
+            <li><strong>Waste Disposal:</strong> Leads to pollution, health hazards, and inefficient use of resources.</li>
+            <li><strong>Drainage Issues:</strong> Causes waterlogging, infrastructure damage, and inconvenience to citizens.</li>
+        </ul>
+        <p>Addressing these problems ensures cost efficiency, improved urban livability, and environmental sustainability.</p>
+    </div>
+
+    <div class="content">
+        <h2>Problems Arising Without Addressing the Issue</h2>
+        <ul>
+            <li><strong>For Waste Disposal:</strong> High transportation costs, delays in collection, and increased environmental pollution.</li>
+            <li><strong>For Drainage:</strong> Clogged channels, frequent maintenance, and increased risk of flooding.</li>
+        </ul>
+    </div
+
+    <div class="content">
+        <h2>Other Problems Solved If Addressed</h2>
+        <ul>
+            <li><strong>Clogged Drainage:</strong>Smart drainage systems with sensors can detect and prevent blockages, reducing flooding and water stagnation.</li>
+            <li><strong>Flooding:</strong> Predictive drainage systems can adapt to heavy rainfall, preventing flood damage.</li>
+            <li><strong>Traffic Disruptions:</strong> Efficient waste management and drainage reduce road blockages, making it easier to maintain smooth traffic flow.</li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <h2>Algorithms Used</h2>
+        <p>This solution combines the strengths of BST (Binary Search Tree) and Kruskal's Algorithm:</p>
+        <div class="section-title">Steps for Implementation</div>
+        <ul>
+            <li>**Data Collection:** Real-time data on waste, traffic, and water flow using IoT sensors and GIS mapping.</li>
+            <li>**Graph Construction:** Represent waste bins, drainage points, and connections as nodes and edges.</li>
+            <li>**BST for Edge Storage:** Dynamically store and sort edges based on weights like cost or distance.</li>
+            <li>**Kruskal’s Algorithm:** Use the BST to retrieve minimum-weight edges and construct an MST (Minimum Spanning Tree).</li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <h2>How the Combination Works</h2>
+        <ul>
+            <li><strong>Waste Disposal:</strong> Identifies shortest routes for garbage collection using MST.</li>
+            <li><strong>Drainage:</strong> Connects drainage points to minimize costs and ensure efficient water flow.</li>
+        </ul>
+        <p>Real-time updates in the BST enable dynamic adaptation to changes like blocked routes or varying flow rates.</p>
+    </div>
+
+    <div class="content">
+        <h2>Example Scenarios</h2>
+        <div class="section-title">Waste Disposal:</div>
+        <ul>
+            <li>Nodes: Waste bins A, B, C, D.</li>
+            <li>Edges: A-B (4 km), A-C (2 km), etc.</li>
+            <li>Result: Shortest routes for garbage collection, reducing fuel costs and travel time.</li>
+        </ul>
+        <div class="section-title">Drainage Management:</div>
+        <ul>
+            <li>Nodes: Drainage points A, B, C, D.</li>
+            <li>Edges: A-B (10 cost), A-C (15 cost), etc.</li>
+            <li>Result: Optimized connections, preventing bottlenecks and reducing maintenance.</li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <h2>Alternatives and Enhancements</h2>
+        <ul>
+            <li><strong>Priority Queues/Heaps:</strong> For faster edge retrieval.</li>
+            <li><strong>Ant Colony Optimization:</strong> Simulates biological processes for route optimization.</li>
+            <li><strong>Graph Neural Networks:</strong> Predicts dynamic changes in waste and water flow patterns.</li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <h2>Conclusion</h2>
+        <p>
+            Combining BST and Kruskal's Algorithm provides a dynamic, cost-effective solution for waste disposal and drainage management. By integrating real-time data and advanced algorithms, Vyomadri can enhance its infrastructure and sustainability, ensuring better quality of life for its residents.
+        </p>
+    </div>
+</body>
+</html>
