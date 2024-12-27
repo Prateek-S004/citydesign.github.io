@@ -19,6 +19,19 @@
             font-size: 2em;
             letter-spacing: 1px;
         }
+        nav {
+            background-color: #0056b3;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
         .box {
             max-width: 1200px;
             margin: 20px auto;
@@ -61,47 +74,33 @@
         .container p {
             margin-bottom: 0;
         }
-.code a  {
-    display: inline-block;
-    text-decoration: none;
-    font-size: 1rem;
-    color: #0056b3;
-    background-color: #f0f8ff;
-    padding: 10px 15px;
-    border: 1px solid #0056b3;
-    border-radius: 5px;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-.code a:hover {
-    background-color: #0056b3;
-    color: #ffffff;
-}
     </style>
 </head>
 <body>
     <header>
         <h1>Mapping Business Use Cases to SDG 11 Targets and Indicators</h1>
     </header>
+    <nav>
+        <a href="#traffic">Efficient Traffic Managing System</a>
+        <a href="#recreation">Zone for Recreation and Tourism</a>
+        <a href="#waste">Waste Disposal and Drainage Management</a>
+    </nav>
     <div class="box">
-        <div class="container">
+        <div class="container" id="traffic">
         <h2>Efficient Traffic Managing System</h2>
         <p><b>SDG 11.2:</b> Provide access to safe, affordable, accessible, and sustainable transport systems for all, improving road safety, notably by expanding public transport, with special attention to the needs of those in vulnerable situations, women, children, persons with disabilities, and older persons.</p>
         <p>Traffic congestion is a major issue in urban areas, leading to increased travel time, fuel consumption, and air pollution. This use case aims to create a city with regular and proper management of traffic.</p>
         <p><b>Indicator 11.2.1:</b> Proportion of population that has convenient access to public transport, by sex, age, and persons with disabilities.</p>
             <p>For this business case the primary objective is the need to find a way in which there is no traffic coagulation. In other worlds we can say that a way which has no cycles.
-            So for this use case we can use Kruskal's algorithm which gives us the Minimum Spanning Tree(MST) a way which connects all the vertex without having any cycles</p><br>
-            <div class = "code">
-            <a href="https://github.com/Prateek-S004/citydesign.github.io/blob/main/prateek/kruskal.cpp">Click here to view the Kruskal's code</a>
-            </div>
+            So for this use case we can use Kruskal's algorithm which gives us the Minimum Spanning Tree (MST), a way which connects all the vertex without having any cycles.</p>
     </div>
-    <div class="container">
+    <div class="container" id="recreation">
         <h2>Developing a Zone for Recreation and Tourism</h2>
         <p><b>SDG 11.4:</b> Strengthen efforts to protect and safeguard the world’s cultural and natural heritage.</p>
         <p>This use case focuses on protecting and promoting historical buildings and natural heritage. It aims to ensure that cities and communities preserve their unique historical and tourist landmarks.</p>
         <p><b>Indicator 11.4.1:</b> Total expenditure (public and private) per capita spent on the preservation, protection, and conservation of all cultural and natural heritage, by type of heritage.</p>
     </div>
-    <div class="container">
+    <div class="container" id="waste">
         <h2>Proper Waste Disposal and Drainage Management</h2>
         <p><b>SDG 11.6:</b> Reduce the adverse per capita environmental impact of cities, including by paying special attention to air quality and municipal and other waste management.</p>
         <p>This use case emphasizes the waste management of the city and reduces the environmental impact. It promotes sustainable systems for managing solid waste and highlights the importance of well-maintained drainage systems to prevent flooding and enhance urban sanitation, contributing to healthier living conditions.</p>
