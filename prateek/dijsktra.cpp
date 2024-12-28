@@ -28,7 +28,7 @@ public:
             string source, destination;
             int weight;
 
-            if (line.empty() || line[0] == '#') continue; // Skip empty lines and comments
+            if (line.empty() || line[0] == '#') continue; 
 
             getline(ss, source, ',');
             getline(ss, destination, ',');
@@ -135,7 +135,7 @@ public:
 
 int main() {
     Dijkstra d;
-    d.readFromFile("city_map.txt"); // Read data from the file
+    d.readFromFile("city_map.txt");
 
     d.init();
     for (int i = 0; i < d.V - 1; i++) d.find_min();
