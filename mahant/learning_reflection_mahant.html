@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Learning Reflections</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        h1, h2 {
+            color: #222;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            font-size: 2rem;
+        }
+
+        h2 {
+            font-size: 1.75rem;
+        }
+
+        h3 {
+            color: #555;
+            font-size: 1.5rem;
+            margin-bottom: 5px;
+        }
+
+        section {
+            margin-bottom: 30px;
+            padding: 15px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        ul {
+            margin: 10px 0 10px 20px;
+            padding-left: 20px;
+            list-style: disc;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+        code {
+            background: #f4f4f4;
+            padding: 2px 4px;
+            font-family: monospace;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Course Learning Reflections</h1>
+    
+    <section id="problems-in-nature">
+        <h2>1. Problems in Nature</h2>
+        <ul>
+            <li><strong>Iteration:</strong> Water droplets falling repeatedly in a stream, patterns formed by repetitive waves.</li>
+            <li><strong>Recursion:</strong> Branching of trees or rivers, where the structure repeats at smaller scales.</li>
+            <li><strong>Backtracking:</strong> Ants searching for food, solving mazes.</li>
+        </ul>
+    </section>
+
+    <section id="space-time-efficiency">
+        <h2>2. Space and Time Efficiency</h2>
+        <h3>Definitions</h3>
+        <ul>
+            <li><strong>Space Efficiency:</strong> Extra memory (space) used during execution.</li>
+            <li><strong>Time Efficiency:</strong> How fast a program completes its execution.</li>
+        </ul>
+        <h3>Importance</h3>
+        <p>Handles larger inputs without excessive resources, saving on computational costs.</p>
+        <h3>Classes of Problems</h3>
+        <ul>
+            <li>Decomposition</li>
+            <li>Pattern Recognition</li>
+            <li>Abstraction</li>
+            <li>Brave and Cautious Travel</li>
+            <li>Pruning</li>
+            <li>Lazy Propagation Evaluation</li>
+            <li>Sliding Window</li>
+            <li>Level Order Traversal</li>
+            <li>Hierarchical Data</li>
+            <li>Edge Relaxation</li>
+            <li>Balancing and Rotations</li>
+            <li>Kleene Closure</li>
+            <li>Pre-Computing</li>
+            <li>Parental Dominance</li>
+            <li>Prefix and Suffix</li>
+            <li>Partitioning</li>
+            <li>Bit Manipulations</li>
+            <li>Memoization</li>
+            <li>Invariants</li>
+            <li>Shortest Path Trees</li>
+        </ul>
+        <h3>Order of Growth</h3>
+        <ul>
+            <li>O(n!): Grows explosively (brute-force).</li>
+            <li>O(3^n): Exponential growth with base 3 (combinatorial problems).</li>
+            <li>O(2^n): Exponential growth with base 2 (recursive problems).</li>
+            <li>O(n^3): Polynomial growth (cubic-time algorithms).</li>
+            <li>O(n^2): Quadratic growth (Bubble Sort).</li>
+            <li>O(nlogn): Sub-quadratic growth (divide-and-conquer algorithms).</li>
+            <li>O(n): Linear growth (single-loop algorithms).</li>
+            <li>O(root(n)): Sub-linear growth (e.g., finding factors).</li>
+            <li>O(logn): Logarithmic growth (divide-and-conquer strategies).</li>
+        </ul>
+    </section>
+
+    <section id="tree-data-structures">
+        <h2>3. Tree Data Structures</h2>
+        <ul>
+            <li><strong>Tree:</strong> Simple and memory efficient.</li>
+            <li><strong>Binary Search Tree (BST):</strong> Used for sorting, may create skewness.</li>
+            <li><strong>2-3 Tree:</strong> Reduces skewness by storing more than one element per node.</li>
+            <li><strong>AVL Tree:</strong> Balances through rotations, but may become complex.</li>
+            <li><strong>Red-Black Tree:</strong> Reduces rotations.</li>
+            <li><strong>Heap:</strong> Priority queues, dynamic memory allocation.</li>
+            <li><strong>Trie:</strong> Optimized for strings, where paths represent characters.</li>
+        </ul>
+    </section>
+
+    <section id="array-query-algorithms">
+        <h2>4. Array Query Algorithms</h2>
+        <p>Efficiently answer questions about an array, crucial for performance-critical systems.</p>
+        <h3>Applications</h3>
+        <p>Used in competitive programming and real-world systems for performance-critical queries on large datasets.</p>
+        <h3>Principles</h3>
+        <p>Divide and conquer, preprocessing.</p>
+        <h3>Examples</h3>
+        <ul>
+            <li><strong>Segment Trees:</strong> O(logn) complexity for range queries and updates.</li>
+            <li><strong>Fenwick Trees:</strong> O(logn) complexity with lower memory overhead.</li>
+            <li><strong>Sparse Table:</strong> O(1) query time after O(nlogn) preprocessing.</li>
+        </ul>
+    </section>
+
+    <section id="trees-vs-graphs">
+        <h2>5. Trees vs. Graphs</h2>
+        <h3>Traversal</h3>
+        <ul>
+            <li><strong>Trees:</strong> Pre-order, In-order, Post-order.</li>
+            <li><strong>Graphs:</strong> DFS, BFS.</li>
+        </ul>
+        <h3>Key Differences</h3>
+        <ul>
+            <li><strong>Trees:</strong> Hierarchical structure, no cycles.</li>
+            <li><strong>Graphs:</strong> Generalized structure, can have cycles.</li>
+        </ul>
+        <h3>Applications</h3>
+        <ul>
+            <li><strong>Trees:</strong> File systems, organizational charts, decision trees.</li>
+            <li><strong>Graphs:</strong> Social networks, road maps, network analysis.</li>
+        </ul>
+    </section>
+
+    <section id="sorting-searching">
+        <h2>6. Sorting and Searching Algorithms</h2>
+        <h3>Sorting Algorithms</h3>
+        <ul>
+            <li><strong>Bubble Sort:</strong> Repeatedly swaps adjacent elements if they are in the wrong order. <br>
+                <strong>Complexity:</strong> O(n<sup>2</sup>) in the worst case.
+            </li>
+            <li><strong>Selection Sort:</strong> Finds the smallest (or largest) element in the unsorted part and places it in its correct position. <br>
+                <strong>Complexity:</strong> O(n<sup>2</sup>).
+            </li>
+            <li><strong>Insertion Sort:</strong> Builds the sorted array one element at a time by inserting elements into their correct positions. <br>
+                <strong>Complexity:</strong> O(n<sup>2</sup>) worst case, O(n) best case.
+            </li>
+            <li><strong>Merge Sort:</strong> A divide-and-conquer algorithm that splits the array into halves, sorts them, and merges them back. <br>
+                <strong>Complexity:</strong> O(nlogn).
+            </li>
+            <li><strong>Quick Sort:</strong> Partitions the array around a pivot, placing smaller elements on one side and larger on the other, and sorts recursively. <br>
+                <strong>Complexity:</strong> O(n<sup>2</sup>) worst case, O(nlogn) average case.
+            </li>
+            <li><strong>Heap Sort:</strong> Converts the array into a max-heap or min-heap and extracts elements one by one. <br>
+                <strong>Complexity:</strong> O(nlogn).
+            </li>
+        </ul>
+
+        <h3>Searching Algorithms (Strings)</h3>
+        <ul>
+            <li><strong>Boyer-Moore Algorithm:</strong> Skips portions of the text by leveraging mismatches, making it faster for large patterns. <br>
+                <strong>Complexity:</strong> O(nm) worst case, O(n) best case.
+            </li>
+            <li><strong>Knuth-Morris-Pratt (KMP) Algorithm:</strong> Uses a prefix-suffix table to avoid rechecking characters. <br>
+                <strong>Complexity:</strong> O(n + m).
+            </li>
+            <li><strong>Rabin-Karp Algorithm:</strong> Uses a rolling hash to compare substrings with the pattern. <br>
+                <strong>Complexity:</strong> O(nm) worst case, O(n + m) average case.
+            </li>
+        </ul>
+
+        <h3>Searching Algorithms (Graphs)</h3>
+        <ul>
+            <li><strong>Dijkstra's Algorithm:</strong> Finds the shortest path from a source node to all others using edge weights. <br>
+                <strong>Complexity:</strong> O(V<sup>2</sup>) with adjacency matrix, O(E + VlogV) with priority queue.
+            </li>
+            <li><strong>Kruskal's Algorithm:</strong> Selects edges in ascending weight order, ensuring no cycles form. <br>
+                <strong>Complexity:</strong> O(E logE).
+            </li>
+            <li><strong>Prim's Algorithm:</strong> Grows the spanning tree by adding the shortest edge from the tree to a non-tree vertex. <br>
+                <strong>Complexity:</strong> O(V<sup>2</sup>) with adjacency matrix, O(E + VlogV) with priority queue.
+            </li>
+            <li><strong>Floyd-Warshall Algorithm:</strong> Computes shortest paths between all pairs of nodes using dynamic programming. <br>
+                <strong>Complexity:</strong> O(V<sup>3</sup>).
+            </li>
+            <li><strong>Warshall's Algorithm:</strong> Determines whether there is a path between each pair of vertices. <br>
+                <strong>Complexity:</strong> O(V<sup>3</sup>).
+            </li>
+        </ul>
+    </section>
+</body>
+</html>
