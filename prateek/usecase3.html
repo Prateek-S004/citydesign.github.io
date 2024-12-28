@@ -67,6 +67,22 @@
             color: #005a99;
             border: 2px solid #005a99;
         }
+        .problem-space a  {
+            display: inline-block;
+            text-decoration: none;
+            font-size: 1rem;
+            color: #0056b3;
+            background-color: #f0f8ff;
+            padding: 10px 15px;
+            border: 1px solid #0056b3;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        
+        .problem-space a:hover {
+            background-color: #0056b3;
+            color: #ffffff;
+        }
         .back-arrow {
             display: flex;
             align-items: center;
@@ -153,25 +169,41 @@
 
     <div class="content">
         <h2>Algorithms Used</h2>
-        <p>This solution combines the strengths of BST (Binary Search Tree) and Kruskal's Algorithm:</p>
-        <div class="section-title">Steps for Implementation</div>
-        <ul>
-            <li><strong>Data Collection:</strong> Real-time data on waste, traffic, and water flow using IoT sensors and GIS mapping.</li>
-            <li><strong>Graph Construction:</li></strong> Represent waste bins, drainage points, and connections as nodes and edges.</li>
-            <li><strong>BST for Edge Storage:</strong> Dynamically store and sort edges based on weights like cost or distance.</li>
-            <li><strong>Kruskal’s Algorithm:</strong> Use the BST to retrieve minimum-weight edges and construct an MST (Minimum Spanning Tree).</li>
-        </ul>
-    </div>
+        <p>This solution leverages the combined power of a Binary Search Tree (BST) and Kruskal's Algorithm for optimized results.</p>
 
-    <div class="content">
-        <h2>How the Combination Works</h2>
-        <ul>
-            <li><strong>Waste Disposal:</strong> Identifies shortest routes for garbage collection using MST.</li>
-            <li><strong>Drainage:</strong> Connects drainage points to minimize costs and ensure efficient water flow.</li>
-        </ul>
-        <p>Real-time updates in the BST enable dynamic adaptation to changes like blocked routes or varying flow rates.</p>
-    </div>
+        <div class="section-title">How the Combination Works:</div>
 
+        <ol>
+            <li><strong>Edge Storage and Sorting:** 
+                <ul>
+                    <li>Instead of using a simple list to store edges and then sorting them, we use a BST.</li>
+                    <li>Each node in the BST represents an edge (source, destination, weight).</li>
+                    <li>The BST is ordered based on the edge weights, allowing for efficient insertion and retrieval of edges in sorted order.</li>
+                </ul>
+            </li>
+            <li><strong>Kruskal's Algorithm with BST:**
+                <ul>
+                    <li>The BST is traversed in-order to obtain the edges in ascending order of weight.</li>
+                    <li>Kruskal's algorithm then processes these edges, checking for cycles and adding edges to the Minimum Spanning Tree (MST) accordingly.</li>
+                </ul>
+            </li>
+        </ol>
+
+        <p>This approach offers several advantages:</p>
+        <ul>
+            <li><strong>Improved Sorting Efficiency:** BSTs provide efficient insertion and retrieval, leading to faster edge processing compared to traditional sorting methods.</li>
+            <li><strong>Dynamic Updates:** New edges can be easily added to the BST, allowing for dynamic updates to the MST as the city infrastructure evolves.</li>
+        </ul>
+
+        <p>For a detailed implementation of this combined approach, refer to the following code: </p>
+
+        <div class="problem-space">
+        <a href="https://github.com/Prateek-S004/citydesign.github.io/blob/main/prateek/kruskal.cpp">View the Kruskal's code</a>
+        <a href="https://github.com/Prateek-S004/citydesign.github.io/blob/main/prateek/bst.cpp">View the bst code</a>
+        </div>
+        
+    </div>
+    
     <div class="content">
         <h2>Example Scenarios</h2>
         <div class="section-title">Waste Disposal:</div>
