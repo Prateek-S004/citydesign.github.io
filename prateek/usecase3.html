@@ -174,14 +174,14 @@
         <div class="section-title">How the Combination Works:</div>
 
         <ol>
-            <li><strong>Edge Storage and Sorting:** 
+            <li><strong>Edge Storage and Sorting:</strong>
                 <ul>
                     <li>Instead of using a simple list to store edges and then sorting them, we use a BST.</li>
                     <li>Each node in the BST represents an edge (source, destination, weight).</li>
                     <li>The BST is ordered based on the edge weights, allowing for efficient insertion and retrieval of edges in sorted order.</li>
                 </ul>
             </li>
-            <li><strong>Kruskal's Algorithm with BST:**
+            <li><strong>Kruskal's Algorithm with BST:</strong>
                 <ul>
                     <li>The BST is traversed in-order to obtain the edges in ascending order of weight.</li>
                     <li>Kruskal's algorithm then processes these edges, checking for cycles and adding edges to the Minimum Spanning Tree (MST) accordingly.</li>
@@ -191,8 +191,8 @@
 
         <p>This approach offers several advantages:</p>
         <ul>
-            <li><strong>Improved Sorting Efficiency:** BSTs provide efficient insertion and retrieval, leading to faster edge processing compared to traditional sorting methods.</li>
-            <li><strong>Dynamic Updates:** New edges can be easily added to the BST, allowing for dynamic updates to the MST as the city infrastructure evolves.</li>
+            <li><strong>Improved Sorting Efficiency:</strong> BSTs provide efficient insertion and retrieval, leading to faster edge processing compared to traditional sorting methods.</li>
+            <li><strong>Dynamic Updates:</strong> New edges can be easily added to the BST, allowing for dynamic updates to the MST as the city infrastructure evolves.</li>
         </ul>
 
         <p>For a detailed implementation of this combined approach, refer to the following code: </p>
