@@ -5,91 +5,112 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Efficient Traffic Management System for Vyomadri</title>
     <style>
-       body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #f4f4f9;
-    margin: 0;
-    padding: 0;
-    color: #34495e;
-    line-height: 1.6;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    min-height: 100vh;
-}
-header {
-    background-color: #007acc;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    width: 100%;
-}
-h1 {
-    text-align: center;
-    background-color: lightblue;
-    color: white;
-    margin: 0;
-    padding: 20px 0;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    width: 100%;
-}
-nav {
-    display: flex;
-    justify-content: center;
-    background-color: #005a99;
-    padding: 10px 0;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    width: 100%;
-}
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
-    font-size: 1rem;
-    padding: 8px 16px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-nav a:hover {
-    background-color: white;
-    color: #005a99;
-    border: 2px solid #005a99;
-}
-.back-arrow {
-    display: flex;
-    align-items: center;
-    margin: 20px;
-    font-size: 1.2rem;
-    justify-content: center;
-}
-.content {
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin: 20px 0;
-    max-width: 800px;
-    width: 100%;
-    text-align: center;
-}
- .content:hover {
-     transform: translateY(-5px);
-     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.15);
- }
-.section-title {
-    background-color: #ecf0f1;
-    padding: 10px 15px;
-    font-weight: bold;
-    font-size: 18px;
-    margin-bottom: 15px;
-    border-radius: 5px;
-}
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            color: #34495e;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #007acc;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        h1 {
+            text-align: center;
+            background-color: lightblue;
+            color: white; 
+            margin: 0;
+            padding: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        h2 {
+            margin-top: 30px;
+            font-size: 28px;
+        }
+        p {
+            font-size: 16px;
+            margin-bottom: 16px;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        ul li {
+            font-size: 16px;
+            padding-left: 20px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #005a99;
+            padding: 10px 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1rem;
+            padding: 8px 16px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        nav a:hover {
+            background-color: white;
+            color: #005a99;
+            border: 2px solid #005a99;
+        }
+        .back-arrow {
+            display: flex;
+            align-items: center;
+            margin: 20px;
+            font-size: 1.2rem;
+        }
+        .back-arrow a {
+            text-decoration: none;
+            color: #007acc;
+            font-weight: bold;
+        }
+        .back-arrow i {
+            margin-right: 8px;
+        }
+        section {
+            padding: 80px 20px 20px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .content {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 40px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .content:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.15);
+        }
+        .section-title {
+            background-color: #ecf0f1;
+            padding: 10px 15px;
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+        }
     </style>
 </head>
 <body>
