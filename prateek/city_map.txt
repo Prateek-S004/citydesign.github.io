@@ -1,0 +1,19 @@
+# City Map Data
+# Format: Source, Destination, Travel Time (minutes), Congestion Level (0-2)
+
+Post Office,School,5,1
+Post Office,Hospital,8,0
+School,Hospital,3,2
+School,Electric Board,2,1
+Hospital,Agriculture Market Board,4,0
+Electric Board,Agriculture Market Board,1,0
+Post Office,Library,6,0
+School,Market,4,1
+Hospital,Police Station,7,2
+Electric Board,Court,3,0
+Agriculture Market Board,Park,5,1
+Library,Market,3,1
+Market,Police Station,5,2
+Police Station,Court,4,1
+Court,Park,6,0
+Library,Park,8,0
