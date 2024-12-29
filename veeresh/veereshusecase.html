@@ -27,7 +27,7 @@
             text-align: center;
         }
 
-        .container {
+        .use-case {
             max-width: 800px;
             margin: 20px auto;
             padding: 20px;
@@ -56,11 +56,6 @@
             background-color: #45a049;
         }
 
-        #content {
-            text-align: center;
-            margin-top: 20px;
-        }
-
         footer {
             text-align: center;
             padding: 10px 0;
@@ -75,71 +70,37 @@
 <body>
     <h1>SDG 11: Sustainable Cities and Communities</h1>
 
-    <div id="main" class="container">
-        <h2>Use Cases and Mapping</h2>
+    <h2>Use Cases and Mapping</h2>
+
+    <div class="use-case">
+        <h3>1. Livable Area Focused on Families and Community Well-Being</h3>
+        <p><strong>Mapped Target:</strong> Target 11.7 - Accessible Green and Public Spaces</p>
+        <p><strong>Reason:</strong> Creating spaces for families and communities ensures inclusivity and promotes well-being. Green and public spaces enhance the livability of urban areas.</p>
         <div class="buttons">
-            <button onclick="showContent(1)">Use Case 1</button>
-            <button onclick="showContent(2)">Use Case 2</button>
-            <button onclick="showContent(3)">Use Case 3</button>
+            <button onclick="location.href='path-to-case1-page.html'">Learn More</button>
         </div>
     </div>
 
-    <div id="content" class="container" style="display: none;">
-        <button onclick="goBack()">Back</button>
-        <div id="info"></div>
+    <div class="use-case">
+        <h3>2. A Hub for Knowledge Sharing and Workforce Training</h3>
+        <p><strong>Mapped Target:</strong> Target 11.C - Financial Support for Sustainable Urban Development</p>
+        <p><strong>Reason:</strong> Knowledge-sharing hubs help educate communities and encourage innovation. These initiatives contribute to sustainable urban growth.</p>
+        <div class="buttons">
+            <button onclick="location.href='path-to-case2-page.html'">Learn More</button>
+        </div>
+    </div>
+
+    <div class="use-case">
+        <h3>3. A Zone for Healthcare and Well-Being</h3>
+        <p><strong>Mapped Target:</strong> Target 11.2 - Safe and Sustainable Transportation</p>
+        <p><strong>Reason:</strong> Developing accessible healthcare zones ensures better urban living. Transportation systems should connect people to these zones efficiently.</p>
+        <div class="buttons">
+            <button onclick="location.href='path-to-case3-page.html'">Learn More</button>
+        </div>
     </div>
 
     <footer>
         &copy; 2024 SDG 11 Use Cases
     </footer>
-
-    <script>
-        function showContent(caseNumber) {
-            const content = document.getElementById('content');
-            const main = document.getElementById('main');
-            const info = document.getElementById('info');
-
-            main.style.display = 'none';
-            content.style.display = 'block';
-
-            let html = '';
-
-            switch (caseNumber) {
-                case 1:
-                    html = `
-                        <h3>Livable Area Focused on Families and Community Well-Being</h3>
-                        <p><strong>Mapped Target:</strong> Target 11.7 - Accessible Green and Public Spaces</p>
-                        <p><strong>Reason:</strong> Creating spaces for families and communities ensures inclusivity and promotes well-being. Green and public spaces enhance the livability of urban areas.</p>
-                    `;
-                    break;
-                case 2:
-                    html = `
-                        <h3>A Hub for Knowledge Sharing and Workforce Training</h3>
-                        <p><strong>Mapped Target:</strong> Target 11.C - Financial Support for Sustainable Urban Development</p>
-                        <p><strong>Reason:</strong> Knowledge-sharing hubs help educate communities and encourage innovation. These initiatives contribute to sustainable urban growth.</p>
-                    `;
-                    break;
-                case 3:
-                    html = `
-                        <h3>A Zone for Healthcare and Well-Being</h3>
-                        <p><strong>Mapped Target:</strong> Target 11.2 - Safe and Sustainable Transportation</p>
-                        <p><strong>Reason:</strong> Developing accessible healthcare zones ensures better urban living. Transportation systems should connect people to these zones efficiently.</p>
-                    `;
-                    break;
-                default:
-                    html = '<p>Invalid selection.</p>';
-            }
-
-            info.innerHTML = html;
-        }
-
-        function goBack() {
-            const content = document.getElementById('content');
-            const main = document.getElementById('main');
-
-            content.style.display = 'none';
-            main.style.display = 'block';
-        }
-    </script>
 </body>
 </html>
