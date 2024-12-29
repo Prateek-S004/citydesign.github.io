@@ -127,30 +127,30 @@ void QuickSort(vector<int>& A, int l, int r) {
 }
 
 // Heap Sort
-void HeapBottomUp(vector<int>& H) {
-    int n = H.size();
-    for (int i = n / 2 ; i >= 1; i--) {
-        int k = i;
-        int v = H[k];
-        bool heap = false;
+// void HeapBottomUp(vector<int>& H) {
+//     int n = H.size();
+//     for (int i = n / 2 ; i >= 1; i--) {
+//         int k = i;
+//         int v = H[k];
+//         bool heap = false;
 
-        while (!heap && 2 * k + 1 < n) { // Ensure there is at least one child
-            int j = 2 * k + 1;           // Left child index
-            if (j + 1 < n ) { // If right child exists and is greater
-                if(H[j] < H[j + 1]){
-                    j++;
-                } 
-            }
-            if (v >= H[j]) {
-                heap = true;             // If parent is greater or equal, stop
-            } else {
-                H[k] = H[j];             // Move the larger child up
-                k = j;                   // Move down to the child's position
-            }
-        }
-        H[k] = v;                        // Place the original value in the correct position
-    }
-}
+//         while (!heap && 2 * k + 1 < n) { // Ensure there is at least one child
+//             int j = 2 * k + 1;           // Left child index
+//             if (j + 1 < n ) { // If right child exists and is greater
+//                 if(H[j] < H[j + 1]){
+//                     j++;
+//                 } 
+//             }
+//             if (v >= H[j]) {
+//                 heap = true;             // If parent is greater or equal, stop
+//             } else {
+//                 H[k] = H[j];             // Move the larger child up
+//                 k = j;                   // Move down to the child's position
+//             }
+//         }
+//         H[k] = v;                        // Place the original value in the correct position
+//     }
+// }
 
 
 int main() {
@@ -217,8 +217,8 @@ int main() {
         }
         case 6:{
             //HeapSort(A);
-            cout << "Sorting using Heap Sort : " << endl;
-            display(A);
+            cout << "Not done yet." << endl;
+            // display(A);
             break;
         }
         default: exit(0);
