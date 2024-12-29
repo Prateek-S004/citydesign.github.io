@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Study 2: Knowledge Sharing Hub</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+            color: #333;
+        }
+        header {
+            background-color: #3E64E8;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        section {
+            background-color: white;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #3E64E8;
+        }
+        ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+        .advantage {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #f0f0f0;
+            border-left: 4px solid #3E64E8;
+        }
+        a {
+            color: #3E64E8;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Business Case 2: Knowledge Sharing Hub</h1>
+</header>
+
+<section>
+    <h2>Objectives</h2>
+    <ul>
+        <li>Effectively assign trainers to centers with the highest demand for skills.</li>
+        <li>Schedule training sessions efficiently to avoid conflicts.</li>
+        <li>Maximize utilization of training center capacity.</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Technique: FCFS Scheduling</h2>
+    <p>First-Come-First-Served scheduling ensures training requests are processed in their order of arrival. This minimizes conflicts and improves organization.</p>
+    <div class="advantage">
+        <strong>Advantages:</strong>
+        <ul>
+            <li>Time Complexity: O(n), where n is the number of training requests.</li>
+            <li>Simple to implement and fast for small to medium datasets.</li>
+            <li>Provides a fair and predictable schedule.</li>
+        </ul>
+    </div>
+</section>
+
+<section>
+    <h2>Technique: Greedy Resource Allocation</h2>
+    <p>The greedy approach allocates trainers to the training centers with the highest demand for specific skills, ensuring optimal resource utilization.</p>
+    <div class="advantage">
+        <strong>Advantages:</strong>
+        <ul>
+            <li>Time Complexity: O(n log n) (sorting by demand).</li>
+            <li>Minimizes trainer idle time and maximizes skill coverage.</li>
+            <li>Works well in balancing resource distribution.</li>
+        </ul>
+    </div>
+</section>
+
+<section>
+    <h2>Code Implementation</h2>
+    <p>You can view the code implementations for this case study below:</p>
+    <ul>
+        <li><a href="fcfs_scheduling.cpp" download>Download FCFS Scheduling Implementation (fcfs_scheduling.cpp)</a></li>
+        <li><a href="greedy_trainer_allocation.cpp" download>Download Greedy Algorithm Implementation (greedy_trainer_allocation.cpp)</a></li>
+    </ul>
+</section>
+
+</body>
+</html>
