@@ -3,152 +3,160 @@
 #include <iomanip>
 #include <cstring>
 #include <vector>
-#include <cctype>
+#include <map>
 #include <string>
 using namespace std;
 
-typedef struct tree{
-    int start;
-    int end;
-    int weight;
+typedef struct node{
+    string start;
+    string end;
+    float weight;
 }T;
 
-class krusikal{
-    public:
-        int n;
-        vector<T> A;
-        vector<T> mst;
-        vector<int> arr;
+class Kruskal{
+public:
+    vector<T> A;                    // List of edges
+    vector<T> mst;                  // Minimum spanning tree
+    map<string, string> parent;     // Maps each vertex to its parent
+    map<string, int> rank;          // Rank for union by rank
 
-        void read_arr();
-        void display(vector<T> a);
+    void load_from_file();
+    void display(vector<T> a);
 
-        int find(int u, int v);
-        void Union(int u, int v);
-        void Merge(vector<T>& B, vector<T>& C, vector<T>& A);
-        void MergeSort(vector<T>& A);
-        void Krusikals_algo();
+    string find(string u);
+    void Union(string u, string v);
+    void Merge(vector<T>& B, vector<T>& C, vector<T>& A);
+    void MergeSort(vector<T>& A);
+    void Kruskals_algo();
 };
 
-void krusikal::read_arr(){
-    cout << "Enter number of edges : ";
-    cin >> n;
-    int s,e,w;
-    for(int i = 0 ; i < n ; i++){
-        cout << i+1 << ":" << endl;
-        cout << "Enter starting node : ";
-        cin >> s;
-        cout << "Enter ending node : ";
-        cin >> e;
-        cout << "Enter weight of edge : ";
-        cin >> w;
-        cout << endl;
+void Kruskal::load_from_file(){
+    ifstream file("city_area.txt");
 
-        A.push_back(T{s,e,w});
-        cin.ignore();
+    if (!file){
+        cout << "File Not Found\n";
+        return;
     }
+
+    string start, end;
+    float cost;
+    while (file >> start >> end >> cost){
+        A.push_back({start, end, cost});
+        parent[start] = start; // Initialize parent for each vertex
+        parent[end] = end;
+        rank[start] = 0;       // Initialize rank for each vertex
+        rank[end] = 0;
+    }
+
+    file.close();
 }
 
-int krusikal::find(int u, int v){
-    if(arr[u] == arr[v]) return 1;
-    else return 0;
+string Kruskal::find(string u){
+    if (parent[u] != u){
+        parent[u] = find(parent[u]);
+    }
+    return parent[u];
 }
 
-void krusikal::Union(int u, int v){
-    int temp = arr[u];
-    for(int i = 0 ; i < arr.size() ; i++){
-        if(arr[i] == temp){
-            arr[i] = arr[v];
+void Kruskal::Union(string u, string v){
+    string rootU = find(u);
+    string rootV = find(v);
+
+    if (rootU != rootV){
+        if (rank[rootU] > rank[rootV]){
+            parent[rootV] = rootU;
+        } 
+        else if (rank[rootU] < rank[rootV]){
+            parent[rootU] = rootV;
+        } 
+        else{
+            parent[rootV] = rootU;
+            rank[rootU]++;
         }
     }
 }
 
-void krusikal::Merge(vector<T>& B, vector<T>& C, vector<T>& A) {
+void Kruskal::Merge(vector<T>& B, vector<T>& C, vector<T>& A){
     int p = B.size();
     int q = C.size();
     int i = 0, j = 0, k = 0;
-    while(i < p && j < q){
-        if(B[i].weight <= C[j].weight){
+    while (i < p && j < q) {
+        if (B[i].weight <= C[j].weight){
             A[k] = B[i];
-            i = i+1;
-        }
+            i = i + 1;
+        } 
         else{
             A[k] = C[j];
-            j = j+1;
+            j = j + 1;
         }
-        k = k+1;
+        k = k + 1;
     }
-    if(i == p){
-        // copy C[j ... q - 1] to A[k ... p + q - 1]
-        while (j <= q-1) {
-            A[k] = C[j];
-            j++;
-            k++;
-        }
+    while (i < p){
+        A[k] = B[i];
+        i++;
+        k++;
     }
-    else{
-        // copy B[i ... p - 1] to A[k ... p + q - 1]
-        while (i <= p-1) {
-            A[k] = B[i];
-            i++;
-            k++;
-        }
+    while (j < q){
+        A[k] = C[j];
+        j++;
+        k++;
     }
 }
 
-void krusikal::MergeSort(vector<T>& A) {
+void Kruskal::MergeSort(vector<T>& A){
     int n = A.size();
-    int mid = n/2;
-    if(n > 1){
-        vector<T> B(A.begin()       , A.begin() + mid); // copy A[0   ... n/2 -1] to B[0 ... n/2 -1]
-        vector<T> C(A.begin() + mid , A.end()        ); // copy A[n/2 ... n -1  ] to C[0 ... n/2 -1]
+    if (n > 1){
+        int mid = n / 2;
+        vector<T> B(A.begin()      , A.begin() + mid);  // Copy A[0 ... mid-1] to B
+        vector<T> C(A.begin() + mid, A.end()        );  // Copy A[mid ... end-1] to C
         MergeSort(B);
         MergeSort(C);
-        Merge(B,C,A);
+        Merge(B, C, A);
     }
 }
 
-void krusikal::display(vector<T> a){
-    for(int i = 0 ; i < a.size() ; i++){
-        cout << i+1 << ") " << a[i].start << " -> " << a[i].end << " = " << a[i].weight << endl;
+void Kruskal::display(vector<T> a){
+    for (int i = 0; i < a.size(); i++){
+        cout << i + 1 << ") " << a[i].start << " -> " << a[i].end << " = " << a[i].weight << endl;
     }
 }
 
-void krusikal::Krusikals_algo(){
-    // Step1 : Sort by edge weights
+void Kruskal::Kruskals_algo(){
+    // Step 1: Sort by edge weights
     MergeSort(A);
 
-    // Step2 : Initialize array with vertices
-    arr.resize(n+1 + 1); // n+1 represents number of vertices
-    for (int i = 0; i <= n+1; i++){
-        arr[i] = i;
-    }
+    // Step 2: Process edges to construct MST
+    int edges = 0;
+    for (int i = 0; i < A.size(); i++){
+        string u = A[i].start;
+        string v = A[i].end;
 
-    // Step 3: using find and union
-    int i = 0, count = 0;
-    while(count < arr.size() - 1 && i < n){
-        if(!find(A[i].start, A[i].end)){
-            Union(A[i].start, A[i].end);
+        if (find(u) != find(v)) { // If u and v are in different sets
+            Union(u, v);
             mst.push_back(A[i]);
-            count++;
+            edges++;
+
+            // Stops when MST contains n-1 edges
+            if (edges == parent.size() - 1) {
+                break;
+            }
         }
-        i++;
     }
 }
 
 int main(){
-    krusikal k;
+    Kruskal k;
 
-    k.read_arr();
-    cout << "Before sorting : " << endl;
-    k.display(k.A);
+    k.load_from_file();
+    k.Kruskals_algo();
 
-    k.MergeSort(k.A);
-    cout << "After sorting : " << endl;
-    k.display(k.A);
-
-    k.Krusikals_algo();
-    cout << "Applying krusikal's Algorithm : " << endl;
-    cout << "Root of minimum spanning tree is : " << k.arr[0] << endl;
+    cout << "Minimum Spanning Tree:" << endl;
     k.display(k.mst);
+
+    float tot_cost = 0.0;
+    for (const auto& x : k.mst){
+        tot_cost += x.weight;
+    }
+    cout << endl << "Total cost : " << tot_cost << endl;
+    return 0;
 }
