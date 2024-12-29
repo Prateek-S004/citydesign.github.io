@@ -42,6 +42,11 @@
             list-style-type: square;
             padding-left: 20px;
         }
+        .advantage {
+            padding-top: 10px;
+            font-style: italic;
+            color: #555;
+        }
     </style>
 </head>
 <body>
@@ -61,6 +66,14 @@
             <li>Useful for determining proximity of different zones to facilities.</li>
             <li>Ensures efficient navigation and allocation of resources across multiple zones.</li>
         </ul>
+        <div class="advantage">
+            <strong>Advantages:</strong>
+            <ul>
+                <li>Time Complexity: O(V + E), where V is the number of vertices (zones) and E is the number of edges (connections).</li>
+                <li>Works well for large graphs and helps efficiently find the shortest path in unweighted graphs.</li>
+                <li>Fast traversal in terms of space complexity as it uses only a queue for exploration.</li>
+            </ul>
+        </div>
     </div>
 
     <div class="technique">
@@ -70,6 +83,14 @@
             <li>Maximizes the impact of resource allocation by focusing on the areas with the greatest need.</li>
             <li>Helps ensure that densely populated areas have the necessary facilities for family well-being.</li>
         </ul>
+        <div class="advantage">
+            <strong>Advantages:</strong>
+            <ul>
+                <li>Time Complexity: O(n log n) when sorting zones by population density, where n is the number of zones.</li>
+                <li>Efficiently allocates resources in a way that guarantees optimal results in less time.</li>
+                <li>Simple and easy to implement, with a direct approach to maximize resource usage.</li>
+            </ul>
+        </div>
     </div>
 </section>
 
@@ -84,6 +105,14 @@
             <li>Simple to implement and ensures that training requests are handled in the order they arrive.</li>
             <li>Helps manage training center resources effectively by ensuring no session overlap.</li>
         </ul>
+        <div class="advantage">
+            <strong>Advantages:</strong>
+            <ul>
+                <li>Time Complexity: O(n), where n is the number of training requests.</li>
+                <li>Works quickly as each request is processed in the order it arrives.</li>
+                <li>Optimal for low-complexity scheduling where session conflicts are minimal.</li>
+            </ul>
+        </div>
     </div>
 
     <div class="technique">
@@ -93,6 +122,14 @@
             <li>Optimizes trainer utilization by focusing on the centers with the most significant demand.</li>
             <li>Helps balance the distribution of available trainers across training centers.</li>
         </ul>
+        <div class="advantage">
+            <strong>Advantages:</strong>
+            <ul>
+                <li>Time Complexity: O(n log n) when sorting the training requests or centers by demand.</li>
+                <li>Minimizes idle time for trainers, ensuring they are used where demand is highest.</li>
+                <li>Greedy nature ensures fast allocation of resources without backtracking.</li>
+            </ul>
+        </div>
     </div>
 </section>
 
@@ -107,6 +144,14 @@
             <li>Ensures that resources are allocated to the regions with the highest need.</li>
             <li>Helps in balancing the healthcare load and ensuring adequate resource distribution across all regions.</li>
         </ul>
+        <div class="advantage">
+            <strong>Advantages:</strong>
+            <ul>
+                <li>Time Complexity: O(log n) for insertion and extraction operations, where n is the number of regions.</li>
+                <li>Highly efficient in terms of resource prioritization, ensuring minimal delay in resource allocation.</li>
+                <li>Helps avoid under-serving any region by ensuring that regions with higher demand get resources first.</li>
+            </ul>
+        </div>
     </div>
 
     <div class="technique">
@@ -116,6 +161,14 @@
             <li>Ensures all regions are covered for emergency service connectivity.</li>
             <li>Helps verify that resources can be deployed efficiently across all connected areas.</li>
         </ul>
+        <div class="advantage">
+            <strong>Advantages:</strong>
+            <ul>
+                <li>Time Complexity: O(V + E), where V is the number of vertices (regions) and E is the number of edges (connections).</li>
+                <li>Fast for exploring all connected regions with minimal overhead.</li>
+                <li>Ideal for ensuring no regions are missed when deploying emergency services or resources.</li>
+            </ul>
+        </div>
     </div>
 </section>
 
