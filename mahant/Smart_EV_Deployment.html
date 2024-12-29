@@ -121,7 +121,20 @@
             color: #fff;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         }
-        
+
+        /* Centering the image */
+        .content img {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Align the Dijkstra algorithm link */
+        .dijkstra-link {
+            text-align: center;
+            margin-top: 20px;
+        }
         
     </style>
 </head>
@@ -165,10 +178,16 @@
         </ul>
 
         <div class="section-title">Algorithm Used</div>
-        <p>To ensure accessibility of EV charging station from all points in the city, shortest path algorithms like <a href="https://github.com/Prateek-S004/citydesign.github.io/blob/main/mahant/Codes/Dijkstras.cpp" title="View Dijkstra's algorithm on GitHub">Dijkstra's Algorithm</a> can be used.</p>
-
+        <ul>
+            <p>To ensure accessibility of EV charging station from all points in the city, shortest path algorithms like Dijkstra's Algorithm can be used.</p>
+            <div class="dijkstra-link">
+                <a href="https://github.com/Prateek-S004/citydesign.github.io/blob/main/mahant/Codes/Dijkstras.cpp" title="View Dijkstra's algorithm on GitHub">Dijkstra's Algorithm</a>
+            </div>
+        </ul>
+        
+        <div class="section-title">Directed Graph:</div>
+        <img src="Dijkstra_directed.jpg" alt="Node: EV station, Weight: distance">
     </div>
-</div>
 
 </body>
 </html>
