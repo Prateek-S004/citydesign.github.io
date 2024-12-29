@@ -1,3 +1,9 @@
+// Algorithm:   Kruskal's algorithm
+// Need:        Proper placing of network tower infrastruct for high speed connectivity.
+// assumption:  Coverage of Network tower is 3 - 12 kms of radius.
+// inputs:      Undirected Graph, where nodes are position of towers and weights represent distance between them.
+// output:      MST(minimum spanning tree). Data: city_area.txt
+
 #include <iostream>
 #include <fstream>
 #include <iomanip>
