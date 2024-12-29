@@ -4,126 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Network Tower Deployment - Kruskal's Algorithm</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
-            margin: 20px;
-            padding: 20px;
-        }
-
-        h1 {
-            text-align: center;
-            color: #2c3e50;
-            font-size: 3.5rem;
-        }
-        
-        h2 {
-            text-align: center;
-            color: #2c3e50;
-        }
-        
-        h3 {
-            text-align: center;
-            color: #2c3e50;
-            font-size: 2rem;
-        }
-
-        .content {
-            background-color: #fff;
-            padding: 20px;
-            margin: 20px auto;
-            border-radius: 10px;
-            max-width: 900px;
-            box-shadow: 0 0 15px rgba(0,0,0,0.3);
-        }
-
-        .section-title {
-            font-weight: bold;
-            color: #34495e;
-        }
-
-        p {
-            line-height: 1.6;
-        }
-
-        ul {
-            padding-left: 20px;
-        }
-
-        pre {
-            background-color: #e8f7fa;
-            padding: 15px;
-            display: block;
-            overflow-x: auto;
-            font-family: 'Courier New', Courier, monospace;
-        }
-
-        .highlight {
-            font-weight: bold;
-        }
-
-        footer {
-            text-align: center;
-            padding-top: 20px;
-            font-weight: bold;
-            color: #2ecc71;
-        }
-        
-        .back-arrow {
-            display: flex;
-            align-items: center;
-            margin: 20px;
-            font-size: 1.2rem;
-        }
-        .back-arrow a {
-            text-decoration: none;
-            color: #007acc;
-            font-weight: bold;
-        }
-        .back-arrow i {
-            margin-right: 8px;
-        }
-        
-        /* Navigation Bar */
-        nav {
-            display: flex;
-            justify-content: center;
-            padding: 20px 0;
-            gap: 20px; /* Adds spacing between buttons */
-        }
-        
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-size: 1.5rem;
-            padding: 16px 32px;
-            border-radius: 10px;
-            transition: transform 0.3s ease, color 0.3s ease;
-        }
-        
-        /* Individual button colors */
-        nav a:nth-child(1) {
-            background-color: #5d8aa8; /* Blue */
-        }
-        
-        nav a:nth-child(2) {
-            background-color: #5d8aa8; /* Red */
-        }
-        
-        nav a:nth-child(3) {
-            background-color: #5d8aa8; /* Green */
-        }
-        
-        /* Hover effect for buttons */
-        nav a:hover {
-            transform: scale(1.05);
-            color: #fff;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-        }
-        
-        
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
@@ -168,8 +49,26 @@
         </ul>
 
         <div class="section-title">Algorithm Used</div>
-        <p>For placing the network towers efficiently in our city, <a href="https://github.com/Prateek-S004/citydesign.github.io/blob/main/mahant/Codes/Kruskals.cpp" title="View Kruskal's algorithm on GitHub">Kruskal's Algorithm</a> can be used to minimize the cost of connecting towers while ensuring coverage.</p>
-
+        <p>For placing the network towers efficiently in our city, Kruskal's Algorithm can be used to minimize the cost of connecting towers while ensuring coverage.</p>
+        
+        <div class="section-title">Algorithm Used</div>
+        <ul>
+            <li><strong>Algorithm:</strong> Kruskal's algorithm</li>
+            <li><strong>Need:</strong> For placing the network towers efficiently in our city, Kruskal's Algorithm can be used to minimize the cost of connecting towers while ensuring coverage.</li>
+            <li><strong>Assumption:</strong> Coverage of Network tower is 3 - 12 kms of radius.</li>
+            <li><strong>Input:</strong> Undirected Graph, where nodes are position of towers and weights represent distance between them.</li>
+            <li><strong>output:</strong> MST(minimum spanning tree). Data: city_area.txt</li>
+            
+            <div class="make_centre">
+                <a href="https://github.com/Prateek-S004/citydesign.github.io/blob/main/mahant/Codes/Kruskals.cpp" title="View Kruskal's algorithm on GitHub">Kruskal's Algorithm</a>
+            </div>
+        </ul>
+        
+        <div class="section-title">Undirected Graph:</div>
+        <ul>
+            <p>Node: Tower location, Weight: distance</p>
+            <img src="Kruskal_undirected.jpg" alt="Undirected graph">
+        </ul>
     </div>
 </div>
 
