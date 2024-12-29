@@ -12,9 +12,21 @@
             padding: 20px;
         }
 
-        h1, h2 {
+        h1 {
             text-align: center;
             color: #2c3e50;
+            font-size: 3.5rem;
+        }
+        
+        h2 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        
+        h3 {
+            text-align: center;
+            color: #2c3e50;
+            font-size: 2rem;
         }
 
         .content {
@@ -57,12 +69,80 @@
             font-weight: bold;
             color: #2ecc71;
         }
+        
+        .back-arrow {
+            display: flex;
+            align-items: center;
+            margin: 20px;
+            font-size: 1.2rem;
+        }
+        .back-arrow a {
+            text-decoration: none;
+            color: #007acc;
+            font-weight: bold;
+        }
+        .back-arrow i {
+            margin-right: 8px;
+        }
+        
+        /* Navigation Bar */
+        nav {
+            display: flex;
+            justify-content: center;
+            padding: 20px 0;
+            gap: 20px; /* Adds spacing between buttons */
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.5rem;
+            padding: 16px 32px;
+            border-radius: 10px;
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+        
+        /* Individual button colors */
+        nav a:nth-child(1) {
+            background-color: #5d8aa8; /* Blue */
+        }
+        
+        nav a:nth-child(2) {
+            background-color: #5d8aa8; /* Red */
+        }
+        
+        nav a:nth-child(3) {
+            background-color: #5d8aa8; /* Green */
+        }
+        
+        /* Hover effect for buttons */
+        nav a:hover {
+            transform: scale(1.05);
+            color: #fff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        
+        
     </style>
 </head>
 <body>
+
+    <h1>Business Use Cases</h1>
+    
+    <nav>
+    <a href="Business_Cases/Smart_EV_Deployment.html">Smart EV Charging Deployment</a>
+    <a href="Business_Cases/Security_in_Airports_and_Harbor.html">Security in Airport and Harbor</a>
+    <a href="Business_Cases/Network_Tower_Deployment.html">Network Tower Deployment</a>
+    </nav>
+    
+    <div class="back-arrow">
+    <a href="../index.html"><i>&larr;</i> Back to Home</a>
+    </div>
+    
     <div class="content">
-        <h1>SDG 11 Targets and Indicators for Business Use Cases</h1>
-<br><br>
+
+        <h3>SDG 11 Targets and Indicators for Business Use Cases</h3>
+<br><br>        
         <h2>1. Smart EV Charging Station Deployment</h2>
         <p><span class="highlight">Target 11.2:</span> Provide access to safe, affordable, accessible and sustainable transport systems for all, improving road safety, notably by expanding public transport, with special attention to the needs of those in vulnerable situations, women, children, persons with disabilities and older persons</p>
         <p><span class="highlight">Indicator 11.2.1:</span> Proportion of the population with convenient access to public transport and EV charging stations located within transportation hubs, residential areas, and commercial zones.</p>
