@@ -12,9 +12,21 @@
             padding: 20px;
         }
 
-        h1, h2 {
+        h1 {
             text-align: center;
             color: #2c3e50;
+            font-size: 3.5rem;
+        }
+        
+        h2 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        
+        h3 {
+            text-align: center;
+            color: #2c3e50;
+            font-size: 2rem;
         }
 
         .content {
@@ -57,12 +69,76 @@
             font-weight: bold;
             color: #2ecc71;
         }
+        
+        .back-arrow {
+            display: flex;
+            align-items: center;
+            margin: 20px;
+            font-size: 1.2rem;
+        }
+        .back-arrow a {
+            text-decoration: none;
+            color: #007acc;
+            font-weight: bold;
+        }
+        .back-arrow i {
+            margin-right: 8px;
+        }
+        
+        /* Navigation Bar */
+        nav {
+            display: flex;
+            justify-content: center;
+            padding: 20px 0;
+            gap: 20px; /* Adds spacing between buttons */
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.5rem;
+            padding: 16px 32px;
+            border-radius: 10px;
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+        
+        /* Individual button colors */
+        nav a:nth-child(1) {
+            background-color: #5d8aa8; /* Blue */
+        }
+        
+        nav a:nth-child(2) {
+            background-color: #5d8aa8; /* Red */
+        }
+        
+        nav a:nth-child(3) {
+            background-color: #5d8aa8; /* Green */
+        }
+        
+        /* Hover effect for buttons */
+        nav a:hover {
+            transform: scale(1.05);
+            color: #fff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        
+        
     </style>
 </head>
 <body>
 
     <h1>Network Tower Deployment</h1>
-
+    
+    <nav>
+    <a href="Business_Cases/Smart_EV_Deployment.html">Smart EV Charging Deployment</a>
+    <a href="Business_Cases/Security_in_Airports_and_Harbor.html">Security in Airport and Harbor</a>
+    <a href="Business_Cases/mahant_usecases.html">SDG 11 mapping</a>
+    </nav>
+    
+    <div class="back-arrow">
+    <a href="../index.html"><i>&larr;</i> Back to Home</a>
+    </div>
+    
     <div class="content">
         <p>Strong and reliable network connectivity is essential for a modern city. Deploying network towers strategically will improve communication, support smart city infrastructure, and ensure residents and businesses remain well-connected without coverage issues.</p>
         
