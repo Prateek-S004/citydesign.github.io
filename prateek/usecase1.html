@@ -176,20 +176,47 @@
         </ul>
     </div>
 
-    <div class="content">
-        <h2>How Dijkstra’s Algorithm Helps</h2>
-        <p>Dijkstra’s Algorithm calculates the shortest and fastest routes by treating roads as paths and intersections as points. It is especially useful for handling real-time traffic data to avoid busy roads or blockages.</p>
-        
-        <h3>Where It Can Be Used:</h3>
-        <ul>
-            <li><strong>Real-Time Navigation:</strong> Helps drivers take the quickest route by using live traffic updates.</li>
-            <li><strong>Emergency Services:</strong> Makes sure ambulances and fire trucks get to their destinations faster.</li>
-            <li><strong>Traffic Lights:</strong> Adjusts signal timings to reduce waiting time at intersections.</li>
-            <li><strong>Busy Areas:</strong> Prevents gridlocks in crowded areas by monitoring traffic flows and making quick adjustments.</li>
-            <li><strong>Environmentally Friendly Travel:</strong> Minimizes unnecessary driving, which lowers fuel use and air pollution.</li>
-        </ul>
-    </div>
+   <div class="content">
+        <h2>How Dijkstra's Algorithm Works (Code Example)</h2>
+        <p>
+            The provided C++ code implements Dijkstra's algorithm to find the shortest paths between buildings in a city.
 
+            <div class="problem-space">
+            <a href="https://github.com/Prateek-S004/citydesign.github.io/blob/main/prateek/dijsktra.cpp" target="_blank">View the code here</a>. 
+            </div>
+        
+        </p>
+        <p>
+            <strong>Key Steps:</strong>
+            <ol>
+                <li>Initialization:
+                    <ul>
+                        <li>Read the road network from a "city_map.txt" file: This file contains information about the city's road network, including distances between buildings.</li> 
+                        <li>Initialize distances to all other nodes from the source as infinity.</li>
+                        <li>Mark the source node as visited.</li>
+                    </ul>
+                </li>
+                <li>Find Minimum Distance:
+                    <ul>
+                        <li>Select the unvisited node with the smallest distance from the source.</li>
+                    </ul>
+                </li>
+                <li>Update Distances: 
+                    <ul>
+                        <li>For each unvisited neighbor of the selected node:</li>
+                        <li>Calculate the tentative distance through the selected node.</li>
+                        <li>If the tentative distance is smaller than the current distance, update the distance and parent node.</li>
+                    </ul>
+                </li>
+                <li>Repeat: 
+                    <ul>
+                        <li>Repeat steps 2 and 3 until all nodes are visited.</li>
+                    </ul>
+                </li>
+            </ol>
+        </p>
+        <p>This iterative process efficiently finds the shortest paths from the source node to all other nodes in the network.</p>
+    </div>
     <div class="content">
         <h2>How the Algorithm Works (In Simple Steps)</h2>
         <p>The algorithm starts with a single starting point and finds the shortest paths to all other points. Here's how it works:</p>
