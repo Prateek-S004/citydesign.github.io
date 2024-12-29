@@ -1,3 +1,9 @@
+// Algorithm: Dijkstra's algorithm
+// Need:      Finding shortest path from source node.
+// inputs:    Directed graph, where nodes are EV stations and weight is distance between them. Data: city_num.txt
+// output:    Dijkstra's algorithm can efficiently determine the shortest paths between charging stations,
+//            allowing EV drivers to minimize the time spent traveling between charging stops.
+
 #include <iostream>
 #include <fstream>
 #include <iomanip>
