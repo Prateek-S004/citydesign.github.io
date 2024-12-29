@@ -17,6 +17,22 @@
             padding: 10px 0;
             text-align: center;
         }
+        .nav-bar {
+            background-color: #333;
+            overflow: hidden;
+        }
+        .nav-bar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        .nav-bar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
         .container {
             max-width: 1200px;
             margin: 20px auto;
@@ -59,63 +75,49 @@
 </head>
 <body>
 
-
-    <h1>Mapping Business Cases to SDG Targets and Indicators</h1>
-<div class="container">
-    <div class="use-case">
-        <h2>Efficient and Proper Public Transport</h2>
-        <p><strong>SDG Target 11.2:</strong> Access to Safe, Affordable, and Sustainable Transport Systems</p>
-        <p><strong>Indicator 11.2.1:</strong> Proportion of the population with convenient access to public transport, by sex, age, and persons with disabilities.</p>
-        <p>This use case focuses on creating accessible and efficient public transport for everyone, especially women, children, and the elderly. It reduces traffic congestion and pollution by encouraging public transit over personal vehicles.</p>
+    <!-- Navigation Bar -->
+    <div class="nav-bar">
+        <a href="https://prateek-s004.github.io/citydesign.github.io/" target="_blank">Home</a>
+        <a href="https://prateek-s004.github.io/citydesign.github.io/businessusecase.html" target="_blank">SDG Mapping</a>
+        <a href="https://github.com/Prateek-S004/citydesign.github.io/blob/main/shivaprasad/usecase1.html" target="_blank">Use Case 1</a>
+        <a href="https://github.com/Prateek-S004/citydesign.github.io/blob/main/shivaprasad/usecase2.html" target="_blank">Use Case 2</a>
+        <a href="https://github.com/Prateek-S004/citydesign.github.io/blob/main/shivaprasad/usecase3.html" target="_blank">Use Case 3</a>
     </div>
 
-    <div class="use-case">
-        <h2>Smart Revenue Systems</h2>
-        <p><strong>SDG Target 11.3:</strong> Inclusive and Sustainable Urbanization</p>
-        <p><strong>Indicator 11.3.2:</strong> Proportion of cities with a direct participation structure of civil society in urban planning and management that operate regularly and democratically.</p>
-        <p>Smart revenue systems ensure sustainable urban growth by funding better infrastructure and urban planning. They encourage public-private partnerships and create new revenue sources to support economic development.</p>
+    <header>
+        <h1>Mapping Business Cases to SDG Targets and Indicators</h1>
+    </header>
+
+    <div class="container" id="home">
+        <p>Welcome to the use case section, where we map business cases to SDG targets and indicators.</p>
     </div>
 
-    <div class="use-case">
-        <h2>Smart City Search Engine with Service Recommendations</h2>
-        <p><strong>SDG Target 11.7:</strong> Access to Safe and Inclusive Public Spaces</p>
-        <p><strong>Indicator 11.7.1:</strong> Average share of the built-up area of cities that is open space for public use for all, by gender, age, and persons with disabilities.</p>
-        <p>A smart city search engine makes city services easier to access and use. It offers recommendations for services like healthcare, education, and recreation, ensuring inclusivity for all residents, including those with limited access to technology.</p>
+    <div class="container" id="usecase1">
+        <div class="use-case">
+            <h2>Efficient and Proper Public Transport</h2>
+            <p><strong>SDG Target 11.2:</strong> Access to Safe, Affordable, and Sustainable Transport Systems</p>
+            <p><strong>Indicator 11.2.1:</strong> Proportion of the population with convenient access to public transport, by sex, age, and persons with disabilities.</p>
+            <p>This use case focuses on creating accessible and efficient public transport for everyone, especially women, children, and the elderly. It reduces traffic congestion and pollution by encouraging public transit over personal vehicles.</p>
+        </div>
     </div>
 
-    <div class="use-case">
-        <h2>Other Effects</h2>
-        <p><strong>SDG Target 11.6:</strong> Reduce Environmental Impact</p>
-        <p><strong>Indicator 11.6.2:</strong> Annual mean levels of fine particulate matter (PM2.5) in cities (population-weighted).</p>
-        <p>While not directly addressing pollution, these solutions reduce environmental impacts by promoting efficient public transport and resource optimization through digital services.</p>
+    <div class="container" id="usecase2">
+        <div class="use-case">
+            <h2>Smart Revenue Systems</h2>
+            <p><strong>SDG Target 11.3:</strong> Inclusive and Sustainable Urbanization</p>
+            <p><strong>Indicator 11.3.2:</strong> Proportion of cities with a direct participation structure of civil society in urban planning and management that operate regularly and democratically.</p>
+            <p>Smart revenue systems ensure sustainable urban growth by funding better infrastructure and urban planning. They encourage public-private partnerships and create new revenue sources to support economic development.</p>
+        </div>
     </div>
 
-    <br>
-    <h2>About the Code</h2>
-    <p>The algorithms used in the various use cases are designed to enhance efficiency and achieve optimal outcomes in real-world applications. Below are some of the codes/algorithms involved and how they contribute to each use case:</p>
-
-    <div class="use-case">
-    <h2>Merge Sort: </h2>
-    <p>Merge Sort can be applied to sort investments efficiently, ensuring better allocation in smart revenue systems, or to sort search results in a Smart City Search Engine.</p>
-    <p>Learn more about <a href="https://github.com/Prateek-S004/citydesign.github.io/blob/main/shivaprasad/codes/mergesort.cpp">Merge Sort Code</a>.</p>
-</div>
-
-<div class="use-case">
-    <h2>Brute Force String Search (BFSS): </h2>
-    <p>The BFSS algorithm helps efficiently find specific services based on user queries, improving the experience in a Smart City Search Engine.</p>
-    <p>Learn more about <a href="https://github.com/Prateek-S004/citydesign.github.io/blob/main/shivaprasad/codes/bfss.cpp">BFSS Code</a>.</p>
-</div>
-
-
-<div class="use-case">
-    <h2>Dijkstra's Algorithm: </h2>
-    <p>Dijkstra's Algorithm can optimize public transport routes by finding the shortest paths between destinations.</p>
-    <p>Learn more about <a href="https://github.com/Prateek-S004/citydesign.github.io/blob/main/shivaprasad/codes/Dijkstra.cpp">Dijkstra's Algorithm Code</a>.</p>
-</div>
-
-
-
-</div>
+    <div class="container" id="usecase3">
+        <div class="use-case">
+            <h2>Smart City Search Engine with Service Recommendations</h2>
+            <p><strong>SDG Target 11.7:</strong> Access to Safe and Inclusive Public Spaces</p>
+            <p><strong>Indicator 11.7.1:</strong> Average share of the built-up area of cities that is open space for public use for all, by gender, age, and persons with disabilities.</p>
+            <p>A smart city search engine makes city services easier to access and use. It offers recommendations for services like healthcare, education, and recreation, ensuring inclusivity for all residents, including those with limited access to technology.</p>
+        </div>
+    </div>
 
 </body>
 </html>
