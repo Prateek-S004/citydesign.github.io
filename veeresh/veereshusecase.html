@@ -3,105 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDG 11 Use Cases</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #eef2f7;
+            line-height: 1.6;
             margin: 0;
             padding: 0;
+            background-color: #f4f4f9;
             color: #333;
         }
-        header {
-            background-color: #007acc;
+
+        h1 {
+            background-color: #4CAF50;
             color: white;
-            padding: 20px 0;
+            padding: 20px;
             text-align: center;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
         }
-        header h1 {
-            margin: 0;
-            font-size: 2rem;
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: #005a99;
-            padding: 10px 0;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-size: 1rem;
-            padding: 8px 16px;
-            border-radius: 5px;
-            transition: background-color 0.3s ease, color 0.3s ease;
-        }
-        nav a:hover {
-            background-color: white;
-            color: #005a99;
-            border: 2px solid #005a99;
-        }
-        .back-arrow {
-            display: flex;
-            align-items: center;
-            margin: 20px;
-            font-size: 1.2rem;
-        }
-        .back-arrow a {
-            text-decoration: none;
-            color: #007acc;
-            font-weight: bold;
-        }
-        .back-arrow i {
-            margin-right: 8px;
-        }
-        .box {
-            max-width: 1200px;
-            margin: 20px auto;
-            padding: 30px;
-            background-color: #ffffff;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-            border-radius: 12px;
-            transition: transform 0.2s;
-        }
-        .box:hover {
-            transform: scale(1.01);
-        }
+
         h2 {
-            color: #34495e;
-            font-size: 1.2em;
-            margin-bottom: 10px;
-            border-left: 5px solid #3498db;
-            padding-left: 10px;
+            color: #333;
+            margin-top: 20px;
+            text-align: center;
         }
-        p {
-            color: #555;
-            font-size: 1.1em;
-            line-height: 1.8;
-            margin: 10px 0;
-        }
-        .container {
-            margin-bottom: 30px;
-            padding: 15px 20px;
-            border-left: 4px solid #3498db;
-            background-color: #f9f9f9;
+
+        .use-case {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #ffffff;
             border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
-        .container h2 {
-            margin-top: 0;
-        }
-        .container p {
-            margin-bottom: 0;
-        }
+
         .buttons {
             text-align: center;
             margin-top: 20px;
         }
+
         button {
             background-color: #4CAF50;
             color: white;
@@ -112,9 +51,11 @@
             cursor: pointer;
             font-size: 16px;
         }
+
         button:hover {
             background-color: #45a049;
         }
+
         footer {
             text-align: center;
             padding: 10px 0;
@@ -127,45 +68,34 @@
     </style>
 </head>
 <body>
-    <header>
-        <h1>SDG 11: Sustainable Cities and Communities</h1>
-    </header>
-    <nav>
-        <a href="veeresh/case1.html">Livable Area Focused on Families and Community Well-Being</a>
-        <a href="veeresh/case2.html">A Hub for Knowledge Sharing and Workforce Training</a>
-        <a href="veeresh/case3.html">A Zone for Healthcare and Well-Being</a>
-    </nav>
+    <h1>SDG 11: Sustainable Cities and Communities</h1>
 
-    <div class="back-arrow">
-        <a href="index.html"><i>&larr;</i> Back to Home</a>
+    <h2>Use Cases and Mapping</h2>
+
+    <div class="use-case">
+        <h3>1. Livable Area Focused on Families and Community Well-Being</h3>
+        <p><strong>Mapped Target:</strong> Target 11.7 - Accessible Green and Public Spaces</p>
+        <p><strong>Reason:</strong> Creating spaces for families and communities ensures inclusivity and promotes well-being. Green and public spaces enhance the livability of urban areas.</p>
+        <div class="buttons">
+            <button onclick="location.href='veeresh/case1.html'">Learn More</button>
+        </div>
     </div>
 
-    <div class="box">
-        <div class="container" id="case1">
-            <h2>Livable Area Focused on Families and Community Well-Being</h2>
-            <p><b>Mapped Target:</b> Target 11.7 - Accessible Green and Public Spaces</p>
-            <p><strong>Reason:</strong> Creating spaces for families and communities ensures inclusivity and promotes well-being. Green and public spaces enhance the livability of urban areas.</p>
-            <div class="buttons">
-                <button onclick="location.href='veeresh/case1.html'">Case solution/button>
-            </div>
+    <div class="use-case">
+        <h3>2. A Hub for Knowledge Sharing and Workforce Training</h3>
+        <p><strong>Mapped Target:</strong> Target 11.C - Financial Support for Sustainable Urban Development</p>
+        <p><strong>Reason:</strong> Knowledge-sharing hubs help educate communities and encourage innovation. These initiatives contribute to sustainable urban growth.</p>
+        <div class="buttons">
+            <button onclick="location.href='veeresh/case2.html'">Learn More</button>
         </div>
+    </div>
 
-        <div class="container" id="case2">
-            <h2>A Hub for Knowledge Sharing and Workforce Training</h2>
-            <p><b>Mapped Target:</b> Target 11.C - Financial Support for Sustainable Urban Development</p>
-            <p><strong>Reason:</strong> Knowledge-sharing hubs help educate communities and encourage innovation. These initiatives contribute to sustainable urban growth.</p>
-            <div class="buttons">
-                <button onclick="location.href='veeresh/case2.html'">Case solution</button>
-            </div>
-        </div>
-
-        <div class="container" id="case3">
-            <h2>A Zone for Healthcare and Well-Being</h2>
-            <p><b>Mapped Target:</b> Target 11.2 - Safe and Sustainable Transportation</p>
-            <p><strong>Reason:</strong> Developing accessible healthcare zones ensures better urban living. Transportation systems should connect people to these zones efficiently.</p>
-            <div class="buttons">
-                <button onclick="location.href='veeresh/case3.html'">Case solution</button>
-            </div>
+    <div class="use-case">
+        <h3>3. A Zone for Healthcare and Well-Being</h3>
+        <p><strong>Mapped Target:</strong> Target 11.2 - Safe and Sustainable Transportation</p>
+        <p><strong>Reason:</strong> Developing accessible healthcare zones ensures better urban living. Transportation systems should connect people to these zones efficiently.</p>
+        <div class="buttons">
+            <button onclick="location.href='veeresh/case3.html'">Learn More</button>
         </div>
     </div>
 
