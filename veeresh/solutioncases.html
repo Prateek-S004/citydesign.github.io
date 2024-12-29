@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Case Studies</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        h2 {
+            color: #333;
+        }
+        .case-study {
+            background-color: white;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .technique {
+            margin: 15px 0;
+            padding: 15px;
+            background-color: #f0f0f0;
+            border-left: 5px solid #4CAF50;
+        }
+        .technique h3 {
+            margin-top: 0;
+            color: #333;
+        }
+        .technique ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Business Case Studies and Techniques</h1>
+</header>
+
+<section class="case-study">
+    <h2>Business Case 1: Livable Area Focused on Families and Community Well-being</h2>
+    <p><strong>Description:</strong> This case focuses on optimizing park and school accessibility for families within residential zones.</p>
+
+    <div class="technique">
+        <h3>BFS for Graph Traversal</h3>
+        <p>The BFS technique is used to traverse the adjacency matrix of residential zones, parks, and schools. This helps in finding the shortest path between different zones and facilities like schools and parks.</p>
+        <ul>
+            <li>Useful for determining proximity of different zones to facilities.</li>
+            <li>Ensures efficient navigation and allocation of resources across multiple zones.</li>
+        </ul>
+    </div>
+
+    <div class="technique">
+        <h3>Greedy Optimization for Resource Allocation</h3>
+        <p>The greedy technique is applied to prioritize zones with higher population densities. This helps in allocating resources like parks and schools to the most populated zones first.</p>
+        <ul>
+            <li>Maximizes the impact of resource allocation by focusing on the areas with the greatest need.</li>
+            <li>Helps ensure that densely populated areas have the necessary facilities for family well-being.</li>
+        </ul>
+    </div>
+</section>
+
+<section class="case-study">
+    <h2>Business Case 2: A Hub for Knowledge Sharing and Workforce Training</h2>
+    <p><strong>Description:</strong> This case aims to assign trainers and schedule training sessions based on the requests and available capacity of the training centers.</p>
+
+    <div class="technique">
+        <h3>First-Come-First-Served (FCFS) Scheduling</h3>
+        <p>The FCFS scheduling technique assigns training sessions based on their arrival order. It helps in organizing the training sessions and allocating them without conflict.</p>
+        <ul>
+            <li>Simple to implement and ensures that training requests are handled in the order they arrive.</li>
+            <li>Helps manage training center resources effectively by ensuring no session overlap.</li>
+        </ul>
+    </div>
+
+    <div class="technique">
+        <h3>Greedy Resource Allocation</h3>
+        <p>The greedy technique is used to allocate trainers to centers with the highest demand. It optimizes resource usage by ensuring that the most requested skills are addressed first.</p>
+        <ul>
+            <li>Optimizes trainer utilization by focusing on the centers with the most significant demand.</li>
+            <li>Helps balance the distribution of available trainers across training centers.</li>
+        </ul>
+    </div>
+</section>
+
+<section class="case-study">
+    <h2>Business Case 3: A Zone for Healthcare and Well-being</h2>
+    <p><strong>Description:</strong> This case focuses on efficiently allocating healthcare resources to regions with the highest patient counts, while ensuring effective connectivity for emergency services.</p>
+
+    <div class="technique">
+        <h3>Priority Queue Allocation</h3>
+        <p>The max-heap priority queue technique is applied to allocate healthcare resources to regions based on patient count. It ensures that the regions with the most patients are prioritized for resource allocation.</p>
+        <ul>
+            <li>Ensures that resources are allocated to the regions with the highest need.</li>
+            <li>Helps in balancing the healthcare load and ensuring adequate resource distribution across all regions.</li>
+        </ul>
+    </div>
+
+    <div class="technique">
+        <h3>BFS Traversal for Connectivity</h3>
+        <p>The BFS technique is used to explore the city map and ensure that all connected regions are explored. This helps in verifying efficient connectivity for emergency services.</p>
+        <ul>
+            <li>Ensures all regions are covered for emergency service connectivity.</li>
+            <li>Helps verify that resources can be deployed efficiently across all connected areas.</li>
+        </ul>
+    </div>
+</section>
+
+</body>
+</html>
