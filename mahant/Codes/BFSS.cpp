@@ -7,8 +7,7 @@
 #include <string>
 using namespace std;
 
-class PAN_numbers
-{
+class PAN_numbers{
 private:
     vector <string> entries;
     int global_count;
@@ -25,13 +24,11 @@ public:
 };
 
 
-PAN_numbers::PAN_numbers()
-{
+PAN_numbers::PAN_numbers(){
     global_count = 0;
 }
 
-void PAN_numbers::welcome()
-{
+void PAN_numbers::welcome(){
     for (int i = 0; i < 80; i++) 
         cout << "*";
     cout << "\n\n\t\t\t\tSearch Valid PAN number\n\n\n";
@@ -40,26 +37,22 @@ void PAN_numbers::welcome()
     cout << "\n\n";
 }
 
-void PAN_numbers::load_from_file()
-{
+void PAN_numbers::load_from_file(){
     ifstream file("PAN_num.txt");
 
-    if (!file)
-    {
+    if (!file){
         cout << "File Not Found\n";
         return;
     }
 
     string PAN_num;
 
-    while (file >> PAN_num)
-    {
+    while (file >> PAN_num){
         entries.push_back(PAN_num);
 
         if (global_count < 500)
             global_count++;
-        else
-        {
+        else{
             cout << "Maximum data limit reached.\n";
             break;
         }
@@ -68,10 +61,8 @@ void PAN_numbers::load_from_file()
     file.close();
 }
 
-void PAN_numbers::display_data()
-{
-    for (const auto& entry : entries)
-    {
+void PAN_numbers::display_data(){
+    for (const auto& entry : entries){
         cout << entry << endl;
     }
 }
@@ -100,8 +91,7 @@ bool PAN_numbers :: match_found(const string& search){
     return false; // Invalid
 }
 
-int main()
-{
+int main(){
     PAN_numbers PAN;
     PAN.welcome();
     PAN.load_from_file();
