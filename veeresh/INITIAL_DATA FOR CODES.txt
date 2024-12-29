@@ -1,0 +1,55 @@
+I’ll revise the inputs for the business cases based on the provided map. I’ll align the locations, distances, and objectives with the map’s structure. Please allow me some time to update the cases accordingly.
+
+Updated Business Cases Based on the Map
+
+Business Case 1: Livable Area Focused on Families and Community Well-being
+	1.	Residential Zones:
+	•	Golf Course (1): Population 2500, 3 parks, 2 schools.
+	•	High Court (2): Population 1800, 1 park, 1 school.
+	•	IT Sector (3): Population 3200, 2 parks, 3 schools.
+	•	Temple Lake (6): Population 1500, 1 park, 1 school.
+	•	Industrial Area (7): Population 2100, 2 parks, 2 schools.
+	2.	Adjacency Matrix (Distances in km from the map):
+
+[0, 7, 9.4, 9.4, 7]
+[7, 0, 5.2, 8.8, 8.2]
+[9.4, 5.2, 0, 8.8, 7]
+[9.4, 8.8, 8.8, 0, 5.2]
+[7, 8.2, 7, 5.2, 0]
+
+
+	3.	Goal: Optimize park and school accessibility for families.
+
+Business Case 2: A Hub for Knowledge Sharing and Workforce Training
+	1.	Training Centers (Aligned with Map Locations):
+	•	Bus Terminal (10): Trainers - 12, Capacity - 50, Topics - AI, Cybersecurity.
+	•	Hospital (9): Trainers - 8, Capacity - 30, Topics - Data Science, Software Development.
+	•	Airport (15): Trainers - 15, Capacity - 60, Topics - AI, Data Science.
+	•	Hotel (16): Trainers - 10, Capacity - 40, Topics - Cybersecurity, Software Development.
+	2.	Training Requests:
+	•	Request 1: AI, 20 participants.
+	•	Request 2: Cybersecurity, 25 participants.
+	•	Request 3: Data Science, 30 participants.
+	•	Request 4: Software Development, 35 participants.
+	3.	Goal: Assign trainers and schedule sessions effectively.
+
+Business Case 3: A Zone for Healthcare and Well-being
+	1.	Regions (Patient Counts Adjusted):
+	•	Railway Station (0): Patient Count 200.
+	•	Golf Course (1): Patient Count 350.
+	•	Hills (8): Patient Count 150.
+	•	Dump Yard (14): Patient Count 100.
+	•	Lake (11): Patient Count 400.
+	2.	Healthcare Resources Available: 1000 units.
+	3.	City Connectivity (Adjacency List from the Map):
+
+Railway Station -> Golf Course, Petrol Pump
+Golf Course -> High Court, Offroading, Railway Station
+Hills -> Hospital, Lake
+Dump Yard -> Companies, Airport
+Lake -> Companies, Hills
+
+
+	4.	Goal: Prioritize resource allocation to high-patient regions and ensure efficient connectivity for emergency services.
+
+Let me know if you’d like BFS visualizations or further adjustments!
