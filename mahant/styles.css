@@ -107,3 +107,16 @@ nav a:hover {
     text-align: center;
     margin-top: 20px;
 }
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.content {
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
