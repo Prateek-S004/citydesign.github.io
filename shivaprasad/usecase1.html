@@ -1,1 +1,165 @@
-text to be uploaded
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Efficient Public Transport Use Case</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff; /* Set the background color to white */
+            color: #333;
+        }
+
+        /* Navigation Bar */
+        .nav-bar {
+            background-color: #333;
+            overflow: hidden;
+        }
+        .nav-bar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        .nav-bar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2, h3 {
+            color: #0078d7;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        h2, h3 {
+            margin-top: 20px;
+        }
+
+        p, ul {
+            margin: 10px 0;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        .image-section {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .image-section img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+        }
+
+        .code-links {
+            margin-top: 20px;
+        }
+
+        .code-links a {
+            color: #0078d7;
+            text-decoration: none;
+        }
+
+        .code-links a:hover {
+            text-decoration: underline;
+        }
+
+        a {
+            word-break: break-word;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <div class="nav-bar">
+	<a href="https://prateek-s004.github.io/citydesign.github.io/" target="_blank">Home</a>
+        <a href="https://prateek-s004.github.io/citydesign.github.io/businessusecase.html" target="_blank">SDG Mapping</a>
+        <a href="https://github.com/Prateek-S004/citydesign.github.io/blob/main/shivaprasad/usecase1.html" target="_blank">Use Case 1</a>
+        <a href="https://github.com/Prateek-S004/citydesign.github.io/blob/main/shivaprasad/usecase2.html" target="_blank">Use Case 2</a>
+        <a href="https://github.com/Prateek-S004/citydesign.github.io/blob/main/shivaprasad/usecase3.html" target="_blank">Use Case 3</a>
+    </div>
+
+    <div id="home" class="container">
+        <h1>Welcome to the Efficient Public Transport Use Case</h1>
+        <p>This is a detailed explanation of the Efficient Public Transport Use Case under SDG Target 11.2.</p>
+    </div>
+
+    <div id="usecase1" class="container">
+        <h1>Efficient and Proper Public Transport</h1>
+        <h2>SDG Target 11.2: Access to Safe, Affordable, and Sustainable Transport Systems</h2>
+        <p>
+            Indicator 11.2.1: Proportion of the population with convenient access to public transport, by sex, age, and persons with disabilities.
+        </p>
+        <p>
+            This use case focuses on creating accessible and efficient public transport for everyone, especially women, children, and the elderly. It reduces traffic congestion and pollution by encouraging public transit over personal vehicles.
+        </p>
+
+        <h3>Main Public Transport System</h3>
+        <p>
+            The proposed system has a network of 19 stations connecting far-away places, complemented by a local internal bus system for nearby locations. Routes and stations were carefully planned and assigned realistic weights. The Dijkstra algorithm is implemented using a priority queue for efficient edge relaxation, ensuring optimal paths for travelers with time constraints.
+        </p>
+        <p>
+            This system allows effective scheduling and routing, helping commuters find the best routes and plan their transitions at various stations.
+        </p>
+
+        <h3>Data Structures and Algorithms Used</h3>
+        <ul>
+            <li><strong>Data Structures:</strong> Priority Queue, Lookup Table, Vectors, adjacency matrix</li>
+            <li><strong>Algorithm:</strong> Dijkstra's Algorithm</li>
+        </ul>
+
+        <h3>Why This Challenge Matters</h3>
+        <p>
+            Efficient public transport aligns with SDG Target 11.2 by providing sustainable transit solutions. It ensures inclusivity for all sections of society and minimizes environmental impact while promoting economic growth.
+        </p>
+
+        <div class="image-section">
+            <h3>Route Map</h3>
+            <img src="https://github.com/Prateek-S004/citydesign.github.io/blob/main/shivaprasad/routes.png" alt="Public Transport Route Map">
+        </div>
+
+        <div class="code-links">
+            <h3>Code Implementation</h3>
+            <p>View the full implementation of the code for this use case:</p>
+            <a href="https://github.com/Prateek-S004/citydesign.github.io/blob/main/shivaprasad/usecase1.cpp" target="_blank">
+                Use Case Code (Dijkstra's Algorithm)
+            </a>
+        </div>
+
+        <h3>Efficiency Analysis</h3>
+        <p>
+            The public transport system uses Dijkstra's Algorithm with a time complexity of <strong>O((E + V) log V)</strong> and space complexity of <strong>O(V^2)</strong>. This ensures efficient pathfinding for large networks, optimizing route selection while keeping the system scalable and responsive.
+        </p>
+
+        <h3>Lookup Table</h3>
+        <p>
+            The lookup table is used to store precomputed results, such as station distances or time estimations, to quickly retrieve values without recalculating. This improves efficiency by reducing redundant calculations during pathfinding and scheduling, ensuring faster response times.
+        </p>
+    </div>
+
+</body>
+</html>
