@@ -16,6 +16,21 @@
             color: white;
             padding: 10px;
             text-align: center;
+            position: relative;
+        }
+        .back-arrow {
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .back-arrow a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+        }
+        .back-arrow a:hover {
+            text-decoration: underline;
         }
         section {
             background-color: white;
@@ -49,6 +64,9 @@
 <body>
 
 <header>
+    <div class="back-arrow">
+        <a href="usecases.html">&larr; Back</a>
+    </div>
     <h1>Business Case 2: Knowledge Sharing Hub</h1>
 </header>
 
