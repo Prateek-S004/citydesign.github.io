@@ -107,21 +107,77 @@
     <div class="content">
         <section id="trees-vs-graphs">
             <h3>5. Trees vs. Graphs</h3>
-            <div class="section-title">Traversal</div>
-            <ul>
-                <li><strong>Trees:</strong> Pre-order, In-order, Post-order.</li>
-                <li><strong>Graphs:</strong> DFS, BFS.</li>
-            </ul>
-            <div class="section-title">Key Differences</div>
-            <ul>
-                <li><strong>Trees:</strong> Hierarchical structure, no cycles.</li>
-                <li><strong>Graphs:</strong> Generalized structure, can have cycles.</li>
-            </ul>
-            <div class="section-title">Applications</div>
-            <ul>
-                <li><strong>Trees:</strong> File systems, organizational charts, decision trees.</li>
-                <li><strong>Graphs:</strong> Social networks, road maps, network analysis.</li>
-            </ul>
+            <table border="1" style="width: 100%; border-collapse: collapse; text-align: center;">
+                <thead style="background-color: #f4f4f9;">
+                    <tr>
+                        <th style="padding: 10px;">Criteria</th>
+                        <th style="padding: 10px;">Trees</th>
+                        <th style="padding: 10px;">Graphs</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="padding: 10px; font-weight: bold;">Definition</td>
+                        <td style="padding: 10px;">A connected acyclic graph.</td>
+                        <td style="padding: 10px;">A collection of nodes and edges, which may contain cycles.</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px; font-weight: bold;">Structure</td>
+                        <td style="padding: 10px;">Hierarchical structure.</td>
+                        <td style="padding: 10px;">Generalized structure, may or may not be hierarchical.</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px; font-weight: bold;">Root Node</td>
+                        <td style="padding: 10px;">Has a single root node.</td>
+                        <td style="padding: 10px;">No concept of a root; any node can be connected to any other node.</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px; font-weight: bold;">Connections</td>
+                        <td style="padding: 10px;">Each node is connected to exactly one parent (except the root).</td>
+                        <td style="padding: 10px;">Nodes can have multiple connections (edges) to other nodes.</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px; font-weight: bold;">Cycles</td>
+                        <td style="padding: 10px;">No cycles (acyclic).</td>
+                        <td style="padding: 10px;">Can have cycles.</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px; font-weight: bold;">Traversal Methods</td>
+                        <td style="padding: 10px;">Pre-order, In-order, Post-order.</td>
+                        <td style="padding: 10px;">Depth-First Search (DFS), Breadth-First Search (BFS).</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px; font-weight: bold;">Applications</td>
+                        <td style="padding: 10px;">File systems, decision trees, organizational charts, hierarchical data.</td>
+                        <td style="padding: 10px;">Social networks, road maps, web graphs, network analysis.</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px; font-weight: bold;">Edge Count</td>
+                        <td style="padding: 10px;">A tree with \( n \) nodes has exactly \( n-1 \) edges.</td>
+                        <td style="padding: 10px;">No fixed relationship between nodes and edges.</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px; font-weight: bold;">Complexity</td>
+                        <td style="padding: 10px;">Easier to analyze and simpler algorithms due to structured hierarchy.</td>
+                        <td style="padding: 10px;">Requires more complex algorithms to handle cycles and connectivity.</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px; font-weight: bold;">Weight</td>
+                        <td style="padding: 10px;">Typically unweighted.</td>
+                        <td style="padding: 10px;">Can be weighted or unweighted.</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px; font-weight: bold;">Root-to-Leaf Paths</td>
+                        <td style="padding: 10px;">Unique paths between any two nodes.</td>
+                        <td style="padding: 10px;">Multiple paths can exist between any two nodes.</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px; font-weight: bold;">Subgraphs</td>
+                        <td style="padding: 10px;">Every subtree is a tree.</td>
+                        <td style="padding: 10px;">Subgraphs may or may not retain the properties of the graph.</td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
     </div>
 
