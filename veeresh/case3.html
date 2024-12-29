@@ -1,1 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Study 3: Healthcare and Well-being</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+            color: #333;
+        }
+        header {
+            background-color: #E85D3E;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        section {
+            background-color: white;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #E85D3E;
+        }
+        ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+        .advantage {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #f0f0f0;
+            border-left: 4px solid #E85D3E;
+        }
+        a {
+            color: #E85D3E;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
 
+<header>
+    <h1>Business Case 3: Healthcare and Well-being</h1>
+</header>
+
+<section>
+    <h2>Objectives</h2>
+    <ul>
+        <li>Allocate healthcare resources to regions with the highest patient counts.</li>
+        <li>Ensure all regions are connected for emergency services.</li>
+        <li>Minimize delays in resource distribution and response times.</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Technique: Priority Queue Allocation</h2>
+    <p>This technique uses a max-heap (priority queue) to prioritize resource allocation to regions with the highest patient count first.</p>
+    <div class="advantage">
+        <strong>Advantages:</strong>
+        <ul>
+            <li>Time Complexity: O(log n) for each insertion or extraction, where n is the number of regions.</li>
+            <li>Ensures critical regions are served first, reducing delays.</li>
+            <li>Efficient for large datasets and dynamic priority adjustments.</li>
+        </ul>
+    </div>
+</section>
+
+<section>
+    <h2>Technique: BFS for Connectivity</h2>
+    <p>BFS explores the city map to ensure all connected regions are covered for emergency service deployment.</p>
+    <div class="advantage">
+        <strong>Advantages:</strong>
+        <ul>
+            <li>Time Complexity: O(V + E), where V is the number of regions and E is the number of connections.</li>
+            <li>Fast and reliable for checking connectivity and coverage.</li>
+            <li>Ideal for ensuring efficient routing and resource deployment.</li>
+        </ul>
+    </div>
+</section>
+
+<section>
+    <h2>Code Implementation</h2>
+    <p>You can view the code implementations for this case study below:</p>
+    <ul>
+        <li><a href="priority_queue_allocation.cpp" download>Download Priority Queue Implementation (priority_queue_allocation.cpp)</a></li>
+        <li><a href="bfs_connectivity.cpp" download>Download BFS Implementation (bfs_connectivity.cpp)</a></li>
+    </ul>
+</section>
+
+</body>
+</html>
