@@ -90,6 +90,13 @@
             <li>Provides a fair and predictable schedule.</li>
         </ul>
     </div>
+    <h3>Efficiency Analysis</h3>
+    <p>The FCFS Scheduling implementation:</p>
+    <ul>
+        <li><strong>Space Complexity:</strong> O(n), for storing the schedule.</li>
+        <li><strong>Performance:</strong> Handles training requests sequentially, ensuring no overlaps or skipped requests.</li>
+        <li><strong>Limitations:</strong> Inefficient for high-demand scenarios where dynamic scheduling might be necessary.</li>
+    </ul>
 </section>
 
 <section>
@@ -103,6 +110,13 @@
             <li>Works well in balancing resource distribution.</li>
         </ul>
     </div>
+    <h3>Efficiency Analysis</h3>
+    <p>The Greedy Resource Allocation implementation:</p>
+    <ul>
+        <li><strong>Space Complexity:</strong> O(n), required for sorting and temporary storage.</li>
+        <li><strong>Performance:</strong> Efficient for scenarios with clear prioritization criteria, such as skill demand.</li>
+        <li><strong>Limitations:</strong> May fail to account for overlapping constraints or complex dependencies between training centers.</li>
+    </ul>
 </section>
 
 <section>
