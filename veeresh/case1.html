@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Case Study 3: Livable Area Focused on Families</title>
+    <title>Case Study 1: Livable Area Focused on Families</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -89,6 +89,13 @@
             <li>Works well for unweighted graphs and minimizes computation time.</li>
         </ul>
     </div>
+    <h3>Efficiency Analysis</h3>
+    <p>The BFS implementation:</p>
+    <ul>
+        <li><strong>Space Complexity:</strong> O(V), for the queue and visited array.</li>
+        <li><strong>Performance:</strong> Scales effectively for large networks, provided the graph is sparse (E << V<sup>2</sup>).</li>
+        <li><strong>Limitations:</strong> Does not handle weighted graphs directly, requiring additional modifications for such cases.</li>
+    </ul>
 </section>
 
 <section>
@@ -102,6 +109,13 @@
             <li>Simple and scalable for larger datasets.</li>
         </ul>
     </div>
+    <h3>Efficiency Analysis</h3>
+    <p>The Greedy Optimization implementation:</p>
+    <ul>
+        <li><strong>Space Complexity:</strong> O(n), required for storing sorted elements.</li>
+        <li><strong>Performance:</strong> Ideal for scenarios where population density determines resource allocation priorities.</li>
+        <li><strong>Limitations:</strong> May not always yield a globally optimal solution if resource constraints are complex.</li>
+    </ul>
 </section>
 
 <section>
