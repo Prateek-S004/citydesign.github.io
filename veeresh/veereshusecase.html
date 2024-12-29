@@ -27,34 +27,38 @@
             text-align: center;
         }
 
-        .use-case {
-            background: #ffffff;
+        .container {
+            max-width: 800px;
             margin: 20px auto;
             padding: 20px;
+            background: #ffffff;
             border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            max-width: 800px;
         }
 
-        h3 {
-            color: #4CAF50;
+        .buttons {
+            text-align: center;
+            margin-top: 20px;
         }
 
-        p {
-            margin: 10px 0;
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
         }
 
-        p strong {
-            color: #333;
+        button:hover {
+            background-color: #45a049;
         }
 
-        a {
-            color: #4CAF50;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
+        #content {
+            text-align: center;
+            margin-top: 20px;
         }
 
         footer {
@@ -71,30 +75,71 @@
 <body>
     <h1>SDG 11: Sustainable Cities and Communities</h1>
 
-    <h2>Use Cases and Mapping</h2>
-
-    <div class="use-case">
-        <h3>1. Livable Area Focused on Families and Community Well-Being</h3>
-        <p><strong>Mapped Target:</strong> Target 11.7 - Accessible Green and Public Spaces</p>
-        <p><strong>Reason:</strong> Creating spaces for families and communities ensures inclusivity and promotes well-being. Green and public spaces enhance the livability of urban areas.</p>
+    <div id="main" class="container">
+        <h2>Use Cases and Mapping</h2>
+        <div class="buttons">
+            <button onclick="showContent(1)">Use Case 1</button>
+            <button onclick="showContent(2)">Use Case 2</button>
+            <button onclick="showContent(3)">Use Case 3</button>
+        </div>
     </div>
 
-    <div class="use-case">
-        <h3>2. A Hub for Knowledge Sharing and Workforce Training</h3>
-        <p><strong>Mapped Target:</strong> Target 11.C - Financial Support for Sustainable Urban Development</p>
-        <p><strong>Reason:</strong> Knowledge-sharing hubs help educate communities and encourage innovation. These initiatives contribute to sustainable urban growth.</p>
+    <div id="content" class="container" style="display: none;">
+        <button onclick="goBack()">Back</button>
+        <div id="info"></div>
     </div>
 
-    <div class="use-case">
-        <h3>3. A Zone for Healthcare and Well-Being</h3>
-        <p><strong>Mapped Target:</strong> Target 11.2 - Safe and Sustainable Transportation</p>
-        <p><strong>Reason:</strong> Developing accessible healthcare zones ensures better urban living. Transportation systems should connect people to these zones efficiently.</p>
-    </div>
+    <footer>
+        &copy; 2024 SDG 11 Use Cases
+    </footer>
 
-    <div class="use-case">
-        <p><strong>Relating the Business Case Study with Algorithms (Quick Sort) to Get Good Results and Feedback</strong></p>
-        <p><strong>Additional Idea:</strong> I propose gathering all relevant information, such as rent, ratings, surrounding details, and other attributes, sorting it efficiently, and feeding this sorted data into a search engine. This approach will allow users to search based on specific categories and receive results in a clear and well-organized manner. This idea could work well for the above use cases by making the search for livable areas, knowledge hubs, and healthcare zones more user-friendly and effective.</p>
-        <p>Learn more about the <a href="https://github.com/Prateek-S004/citydesign.github.io/blob/main/veeresh/sort.cpp" title="View Quick Sort Code on GitHub">Quick Sort algorithm</a>.</p>
-    </div>
+    <script>
+        function showContent(caseNumber) {
+            const content = document.getElementById('content');
+            const main = document.getElementById('main');
+            const info = document.getElementById('info');
+
+            main.style.display = 'none';
+            content.style.display = 'block';
+
+            let html = '';
+
+            switch (caseNumber) {
+                case 1:
+                    html = `
+                        <h3>Livable Area Focused on Families and Community Well-Being</h3>
+                        <p><strong>Mapped Target:</strong> Target 11.7 - Accessible Green and Public Spaces</p>
+                        <p><strong>Reason:</strong> Creating spaces for families and communities ensures inclusivity and promotes well-being. Green and public spaces enhance the livability of urban areas.</p>
+                    `;
+                    break;
+                case 2:
+                    html = `
+                        <h3>A Hub for Knowledge Sharing and Workforce Training</h3>
+                        <p><strong>Mapped Target:</strong> Target 11.C - Financial Support for Sustainable Urban Development</p>
+                        <p><strong>Reason:</strong> Knowledge-sharing hubs help educate communities and encourage innovation. These initiatives contribute to sustainable urban growth.</p>
+                    `;
+                    break;
+                case 3:
+                    html = `
+                        <h3>A Zone for Healthcare and Well-Being</h3>
+                        <p><strong>Mapped Target:</strong> Target 11.2 - Safe and Sustainable Transportation</p>
+                        <p><strong>Reason:</strong> Developing accessible healthcare zones ensures better urban living. Transportation systems should connect people to these zones efficiently.</p>
+                    `;
+                    break;
+                default:
+                    html = '<p>Invalid selection.</p>';
+            }
+
+            info.innerHTML = html;
+        }
+
+        function goBack() {
+            const content = document.getElementById('content');
+            const main = document.getElementById('main');
+
+            content.style.display = 'none';
+            main.style.display = 'block';
+        }
+    </script>
 </body>
 </html>
