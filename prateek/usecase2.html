@@ -295,7 +295,20 @@ Tourism and recreation play an important role in improving the local economy and
                 <strong>Note:</strong> This is a simplified example and can be further enhanced by incorporating more advanced algorithms, 
                 user preference tracking, and real-time data integration for a more robust recommendation system.
             </p>
-        </div>    
+        </div>  
+
+         <div class="content">
+        <h2>Recommendation System Code Efficiency</h2>
+        <p>
+            In terms of efficiency, the recommendation engine performs several key tasks, each with its own time and space complexity:
+            <ul>
+                <li><strong>Time Complexity:</strong> The main time complexity of the recommendation engine is dominated by the sorting operation, which uses merge sort with a time complexity of O(n log n). Other operations like loading data, searching, and generating recommendations are linear, O(n).</li>
+                <li><strong>Space Complexity:</strong> The system uses O(n) space for storing the data and O(n) space for the temporary arrays used in merge sort.</li>
+                <li><strong>Scalability:</strong> The system handles small to medium datasets efficiently, but as the dataset grows (millions of locations), performance could degrade without optimizations like caching or parallel processing.</li>
+            </ul>
+            Overall, the recommendation engine is quite efficient for typical use cases but could benefit from optimization techniques for handling larger datasets.
+        </p>
+    </div>
 
     <div class="content">
     <h2>Data Collection and Adaptation</h2>
