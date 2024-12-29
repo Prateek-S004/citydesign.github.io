@@ -1,3 +1,9 @@
+// Algorithm:  BFSS(Brute Force String Search)
+// Need:       Checking if individual's PAN number is Valid or not.
+// assumption: We assume there are 200 PAN numbers which are valid, open PAN_num.txt for all 200 numbers.
+// inputs:     PAN number, whose format is AAAAANNNNA (A - alphabet A to Z, N - number 0 to 9).
+// output:     Apply BFSS and check whether PAN number matches with the contents of PAN_num.txt
+
 #include <iostream>
 #include <fstream>
 #include <iomanip>
