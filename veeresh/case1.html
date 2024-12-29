@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Study 1: Livable Area</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+            color: #333;
+        }
+        header {
+            background-color: #3E8E41;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        section {
+            background-color: white;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #3E8E41;
+        }
+        ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+        .advantage {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #f0f0f0;
+            border-left: 4px solid #3E8E41;
+        }
+        a {
+            color: #3E8E41;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Business Case 1: Livable Area Focused on Families</h1>
+</header>
+
+<section>
+    <h2>Objectives</h2>
+    <ul>
+        <li>Optimize accessibility to parks and schools for families.</li>
+        <li>Ensure residential zones are connected efficiently to nearby facilities.</li>
+        <li>Prioritize resource allocation based on population density.</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Technique: BFS for Graph Traversal</h2>
+    <p>This technique helps traverse the adjacency matrix of residential zones, parks, and schools. It finds the shortest path between different zones and facilities to optimize accessibility.</p>
+    <div class="advantage">
+        <strong>Advantages:</strong>
+        <ul>
+            <li>Time Complexity: O(V + E), where V = number of zones and E = connections.</li>
+            <li>Ensures efficient navigation and traversal.</li>
+            <li>Works well for unweighted graphs and minimizes computation time.</li>
+        </ul>
+    </div>
+</section>
+
+<section>
+    <h2>Technique: Greedy Optimization for Resource Allocation</h2>
+    <p>The greedy technique focuses on allocating resources like parks and schools to zones with higher population densities, ensuring maximum benefit.</p>
+    <div class="advantage">
+        <strong>Advantages:</strong>
+        <ul>
+            <li>Time Complexity: O(n log n) (sorting by population density).</li>
+            <li>Efficiently maximizes resource impact.</li>
+            <li>Simple and scalable for larger datasets.</li>
+        </ul>
+    </div>
+</section>
+
+<section>
+    <h2>Code Implementation</h2>
+    <p>You can view the code implementations for this case study below:</p>
+    <ul>
+        <li><a href="bfs_shortest_path.cpp" download>Download BFS Implementation (bfs_shortest_path.cpp)</a></li>
+        <li><a href="greedy_resource_allocation.cpp" download>Download Greedy Algorithm Implementation (greedy_resource_allocation.cpp)</a></li>
+    </ul>
+</section>
+
+</body>
+</html>
