@@ -228,6 +228,31 @@
     </div>
 
     <div class="content">
+        <h2>Efficiency of the Approach</h2>
+        <p>The efficiency of using a Binary Search Tree (BST) and Kruskal's Algorithm in waste disposal and drainage management can be summarized as follows:</p>
+        
+        <h3>Time Complexity:</h3>
+        <p>
+            BST Operations (Insertion and Retrieval): O(log n) for balanced trees, but O(n) in the worst case if the tree is unbalanced.<br>
+            Kruskal’s Algorithm: O(E log E) due to the sorting of edges.<br>
+            Overall: The time complexity of this approach is dominated by the edge sorting step, which is O(E log E).
+        </p>
+
+        <h3>Space Complexity:</h3>
+        <p>
+            The space complexity is O(n) for storing the edges in the BST and for the union-find structure used in Kruskal’s Algorithm.
+        </p>
+
+        <h3>Scalability:</h3>
+        <p>
+            The approach works well for typical use cases but may require optimizations for large datasets. For very large networks, additional techniques like parallel processing or priority queues could improve performance.
+        </p>
+
+        <p>This approach strikes a balance between performance and ease of implementation, making it a solid choice for managing urban waste disposal and drainage systems.</p>
+    </div>
+
+
+    <div class="content">
         <h2>Alternatives and Enhancements</h2>
         <ul>
             <li><strong>Priority Queues/Heaps:</strong> For faster edge retrieval.</li>
